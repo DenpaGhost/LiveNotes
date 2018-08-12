@@ -8,13 +8,13 @@ public class dialogButtons : MonoBehaviour {
     GameObject canvas,audioSource;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
         canvas = GameObject.Find("Canvas");
         audioSource = GameObject.Find("Audio Source");
     }
 	
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 		
 	}
 
@@ -49,7 +49,7 @@ public class dialogButtons : MonoBehaviour {
         gameObject.GetComponent<Animator>().SetTrigger("Normal");
     }
 
-    void OnClick()
+    public void OnClick()
     {
         switch (gameObject.name)
         {
@@ -64,6 +64,7 @@ public class dialogButtons : MonoBehaviour {
                 EventSystem.current.SetSelectedGameObject(null);
 
                 break;
+            
         }
     }
 }
