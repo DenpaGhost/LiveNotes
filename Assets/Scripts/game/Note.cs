@@ -26,8 +26,11 @@ public class Note : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		
+		gameObject.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x,gameObject.GetComponent<RectTransform>().localPosition.y - 10);
+
 	}
 	
 }

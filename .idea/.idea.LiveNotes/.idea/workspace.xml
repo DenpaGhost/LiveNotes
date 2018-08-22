@@ -2,12 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ccc57d-0557-4617-8e4b-f3b9de3b6f54" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Note.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Note.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Note.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Note.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/game/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/game/Note.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/gameParameters.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Mono/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Mono/EmbedRuntime/MonoPosixHelper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Mono/EmbedRuntime/mono.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Mono/EmbedRuntime/mono.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/Mono.Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/Mono.Security.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/System.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/System.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/System.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AIModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AIModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AnimationModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AnimationModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AssetBundleModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AssetBundleModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AudioModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.AudioModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.BaselibModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.BaselibModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CloudWebServicesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CloudWebServicesModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CoreModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CoreModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.DirectorModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.DirectorModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.FacebookModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.FacebookModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GridModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.GridModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.IMGUIModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.IMGUIModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Networking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Networking.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticleSystemModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticleSystemModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticlesLegacyModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ParticlesLegacyModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PerformanceReportingModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PerformanceReportingModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Physics2DModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.Physics2DModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PhysicsModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.PhysicsModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ScreenCaptureModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.ScreenCaptureModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpatialTrackingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpatialTrackingModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteMaskModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteMaskModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.StyleSheetsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.StyleSheetsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TilemapModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TilemapModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TimelineModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.TimelineModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIElementsModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIElementsModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UIModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityAnalyticsModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityAnalyticsModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityConnectModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityConnectModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAudioModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestAudioModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestWWWModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.UnityWebRequestWWWModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VRModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VRModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.WebModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.WebModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.XRModule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.XRModule.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/UnityEngine.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Managed/mscorlib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Resources/unity default resources" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Resources/unity default resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Resources/unity_builtin_extra" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/Resources/unity_builtin_extra" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/Preview_0_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/UnityCrashHandler64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/UnityCrashHandler64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relase/Preview_0/UnityPlayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Relase/Preview_0/UnityPlayer.dll" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,34 +139,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gameNotesGenerater.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
+      <file leaf-file-name="NotesManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
-                <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-                <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-                <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-                <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-                <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-                <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-                <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
+                <marker date="1534946816785" expanded="false" signature="6:116" ph="..." />
+                <marker date="1534946816785" expanded="true" signature="160:1152" ph="{...}" />
+                <marker date="1534946816785" expanded="true" signature="421:764" ph="{...}" />
+                <marker date="1534946816785" expanded="true" signature="487:557" ph="{...}" />
+                <marker date="1534946816785" expanded="true" signature="825:1148" ph="{...}" />
+                <marker date="1534946816785" expanded="true" signature="865:1143" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Note.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
+      <file leaf-file-name="Note.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Note.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="527">
+              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding>
-                <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-                <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-                <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-                <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
+                <marker date="1534946765998" expanded="false" signature="6:90" ph="..." />
+                <marker date="1534946765998" expanded="true" signature="125:630" ph="{...}" />
+                <marker date="1534946765998" expanded="true" signature="203:268" ph="{...}" />
+                <marker date="1534946765998" expanded="true" signature="289:346" ph="{...}" />
+                <marker date="1534946765998" expanded="true" signature="363:370" ph="{...}" />
+                <marker date="1534946765998" expanded="true" signature="424:626" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameParameters.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/gameParameters.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <marker date="1534661561157" expanded="true" signature="27:574" ph="{...}" />
+                <marker date="1534661561157" expanded="true" signature="130:199" ph="{...}" />
+                <marker date="1534661561157" expanded="true" signature="222:291" ph="{...}" />
+                <marker date="1534661561157" expanded="true" signature="317:392" ph="{...}" />
+                <marker date="1534661561157" expanded="true" signature="413:482" ph="{...}" />
+                <marker date="1534661561157" expanded="true" signature="503:572" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveNotesFunctions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1534661227242" expanded="true" signature="34:937" ph="{...}" />
+                <marker date="1534661227242" expanded="true" signature="72:935" ph="{...}" />
+                <marker date="1534661227242" expanded="true" signature="132:929" ph="{...}" />
+                <marker date="1534661227242" expanded="true" signature="301:891" ph="{...}" />
+                <marker date="1534661227242" expanded="true" signature="571:876" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <marker date="1534513239611" expanded="true" signature="41:181" ph="{...}" />
+                <marker date="1534513239611" expanded="true" signature="66:179" ph="{...}" />
+                <marker date="1534513239611" expanded="true" signature="119:173" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -93,16 +248,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/gameParameters.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Note.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/game/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gameParameters.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/game/Note.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" />
       </list>
     </option>
   </component>
@@ -116,10 +279,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-303" />
-    <option name="y" value="-16" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -143,11 +306,25 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="LiveNotes (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="LiveNotes (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,9 +345,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="2976">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2976" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -192,6 +369,12 @@
       <workItem from="1534140763853" duration="829000" />
       <workItem from="1534340490938" duration="893000" />
       <workItem from="1534341966023" duration="1293000" />
+      <workItem from="1534429890379" duration="1392000" />
+      <workItem from="1534511927579" duration="3661000" />
+      <workItem from="1534645295745" duration="18000" />
+      <workItem from="1534645339987" duration="3820000" />
+      <workItem from="1534749558717" duration="2396000" />
+      <workItem from="1534941915651" duration="4693000" />
     </task>
     <task id="LOCAL-00001" summary="何となく">
       <created>1534074855854</created>
@@ -204,7 +387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11150000" />
+    <option name="totallyTimeSpent" value="27130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -226,13 +409,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Build" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -242,6 +426,31 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Unity" order="9" weight="0.32897604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15245202" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32897604" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -281,18 +490,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="何となく" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="41:181" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="66:179" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="119:173" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -317,35 +522,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="41:181" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="66:179" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="119:173" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameParameters.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
+            <marker date="1534074137977" expanded="false" signature="6:110" ph="..." />
+            <marker date="1534074137977" expanded="true" signature="155:1765" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="248:354" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="453:528" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="559:753" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="786:983" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1011:1254" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1280:1358" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1385:1763" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1424:1757" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1534513239611" expanded="true" signature="41:181" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="66:179" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="119:173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameParameters.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1534074137977" expanded="false" signature="6:110" ph="..." />
+            <marker date="1534074137977" expanded="true" signature="155:1765" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="248:354" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="453:528" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="559:753" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="786:983" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1011:1254" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1280:1358" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1385:1763" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1424:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameParameters.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1534074137977" expanded="false" signature="6:110" ph="..." />
+            <marker date="1534074137977" expanded="true" signature="155:1765" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="248:354" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="453:528" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="559:753" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="786:983" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1011:1254" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1280:1358" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1385:1763" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1424:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1534074137977" expanded="false" signature="6:110" ph="..." />
+            <marker date="1534074137977" expanded="true" signature="155:1765" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="248:354" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="453:528" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="559:753" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="786:983" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1011:1254" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1280:1358" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1385:1763" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1424:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1534074137977" expanded="false" signature="6:110" ph="..." />
+            <marker date="1534074137977" expanded="true" signature="155:1765" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="248:354" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="453:528" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="559:753" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="786:983" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1011:1254" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1280:1358" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1385:1763" ph="{...}" />
+            <marker date="1534074137977" expanded="true" signature="1424:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -366,48 +680,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -428,35 +703,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -477,35 +725,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -526,22 +747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -562,48 +768,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -623,48 +790,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <marker date="1534340250657" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534340250657" expanded="true" signature="114:235" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1534340250657" expanded="true" signature="226:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Note.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -685,18 +813,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameParameters.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gameNotesGenerater.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <marker date="1534077647537" expanded="false" signature="6:127" ph="..." />
-            <marker date="1534077647537" expanded="true" signature="177:842" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="318:415" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="477:488" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="506:838" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="579:835" ph="{...}" />
-            <marker date="1534077647537" expanded="true" signature="709:830" ph="{...}" />
+            <marker date="1534661227242" expanded="true" signature="34:937" ph="{...}" />
+            <marker date="1534661227242" expanded="true" signature="72:935" ph="{...}" />
+            <marker date="1534661227242" expanded="true" signature="132:929" ph="{...}" />
+            <marker date="1534661227242" expanded="true" signature="301:891" ph="{...}" />
+            <marker date="1534661227242" expanded="true" signature="571:876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/gameParameters.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1534661561157" expanded="true" signature="27:574" ph="{...}" />
+            <marker date="1534661561157" expanded="true" signature="130:199" ph="{...}" />
+            <marker date="1534661561157" expanded="true" signature="222:291" ph="{...}" />
+            <marker date="1534661561157" expanded="true" signature="317:392" ph="{...}" />
+            <marker date="1534661561157" expanded="true" signature="413:482" ph="{...}" />
+            <marker date="1534661561157" expanded="true" signature="503:572" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Timer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1534513239611" expanded="true" signature="41:181" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="66:179" ph="{...}" />
+            <marker date="1534513239611" expanded="true" signature="119:173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/Note.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <marker date="1534946765998" expanded="false" signature="6:90" ph="..." />
+            <marker date="1534946765998" expanded="true" signature="125:630" ph="{...}" />
+            <marker date="1534946765998" expanded="true" signature="203:268" ph="{...}" />
+            <marker date="1534946765998" expanded="true" signature="289:346" ph="{...}" />
+            <marker date="1534946765998" expanded="true" signature="363:370" ph="{...}" />
+            <marker date="1534946765998" expanded="true" signature="424:626" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <marker date="1534946816785" expanded="false" signature="6:116" ph="..." />
+            <marker date="1534946816785" expanded="true" signature="160:1152" ph="{...}" />
+            <marker date="1534946816785" expanded="true" signature="421:764" ph="{...}" />
+            <marker date="1534946816785" expanded="true" signature="487:557" ph="{...}" />
+            <marker date="1534946816785" expanded="true" signature="825:1148" ph="{...}" />
+            <marker date="1534946816785" expanded="true" signature="865:1143" ph="{...}" />
           </folding>
         </state>
       </provider>
