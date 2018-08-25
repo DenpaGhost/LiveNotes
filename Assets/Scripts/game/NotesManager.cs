@@ -24,66 +24,25 @@ namespace Game
             GameParameters.Min = 1;
             GameParameters.Num = 20;
             GameParameters.Repeat = 1;
-            GameParameters.Speed = 1;
+            GameParameters.Speed = 5;
             
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
+            
+            //リストの最低必要個数を計算
+            GameParameters.MinListCount = (GameParameters.MinListCount / GameParameters.Num + 1) * GameParameters.Num;
 
             //Listに詰めこむ
-            _notesList = Lf.FirstPushNotesDataToList();
+            _notesList = new List<NotesData>();
+            _notesList = Lf.PushNotesDataToList(_notesList);
+
+            for (int i = 0; i < _notesList.Count; i++)
+            {
+                Debug.Log("Lane : " + _notesList[i].LanesPosition +"\ntargetTime : " + _notesList[i].TargetTime);
+            }
             
             //最初のノーツを出す
-            while(true)
-            {
-                var sw = new Stopwatch();
-                
-                //値を受け取る
-                var targetTime = _notesList[0].TargetTime;
-                
-                //描画されるであろう位置を計算
-                var spawnPosition = Lf.CalcuSpawnPosition(0, targetTime);
-                
-                Debug.Log(spawnPosition);
-                
-                //画面外でなければ描画
-                if (GameConstants.NOTES_AREA_HEIGHT > spawnPosition)
-                {
-                    var lanesPosition = _notesList[0].LanesPosition;
-
-                    for (int i = 0; i < GameConstants.POSITION_DATA.Length; i++)
-                    {
-                        if ((lanesPosition | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
-                        {
-                            GameObject note;
-                            if (i % 2 == 0)
-                            {
-                                note = Instantiate(_noteWide);
-                            }
-                            else
-                            {
-                                note = Instantiate(_noteSmall);
-                            }
-                            
-                            note.transform.SetParent(_notesArea.GetComponent<Transform>());
-                            note.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
-                            note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i], GameConstants.DISPLAY_UPPER_END_Y - spawnPosition);
-
-                            note.GetComponent<Note>().TargetTime = targetTime;
-                            note.GetComponent<Note>().Timer = sw;
-
-                            //先頭を削除
-                            _notesList.RemoveAt(0);
-                        }
-                    }
-                    
-                }
-                else
-                {
-                    sw.Start();
-                    break;
-                }
-
-            } 
+            Lf.SpawnNote(_notesList,_notesArea,_noteWide,_noteSmall);
 
         }
 
@@ -91,7 +50,14 @@ namespace Game
         public void Update()
         {
             
-
+            if (_notesList.Count < GameParameters.MinListCount)
+            {
+                Debug.Log("aaaaa");
+                _notesList = Lf.PushNotesDataToList(_notesList);
+            }
+            
+            Lf.SpawnNote(_notesList,_notesArea,_noteWide,_noteSmall);
+            
         }
 
     }

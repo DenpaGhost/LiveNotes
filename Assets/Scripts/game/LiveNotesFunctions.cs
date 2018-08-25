@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Constants;
+using UnityEngine.Timeline;
 
 namespace Game
 {
     public class LiveNotesFunctions : MonoBehaviour
     {
+        
+        
         //フレーズを作る関数
         public static int[] Generate(ushort num,byte max,byte min)
         {
@@ -43,27 +46,42 @@ namespace Game
 
         }
 
-        //最初にリストをいっぱいにするための関数
-        public static List<NotesData> FirstPushNotesDataToList()
+        
+        
+        //リストをいっぱいにするための関数
+        public static List<NotesData> PushNotesDataToList(List<NotesData> list)
         {
-            var list = new List<NotesData>();
-            while (list.Count < GameConstants.MIN_NOTES_COUNT)
+            long time = 0;
+            var timer = new NotesTimer();
+            
+            while (list.Count <= GameParameters.MinListCount)
             {
+                var counter = 0;
                 var tmp = Generate(GameParameters.Num,GameParameters.Max,GameParameters.Min);
 
                 for (var repeat = 0; repeat < GameParameters.Repeat; repeat++)
                 {
                     for (var i = 0; i < tmp.Length; i++)
                     {
-                        list.Add(new NotesData(tmp[i],
-                            GameParameters.Interval * i));
+                        counter += i;
+                        time = GameParameters.Interval * counter + GameParameters.OffsetTime;
+                        list.Add(new NotesData(tmp[i], time, timer));
                     }
                 }
                 
             }
 
+            timer.StopWatch.Start();
+            
+            //次回のオフセットを設定
+            GameParameters.OffsetTime = time;
+            
+            Debug.Log("Offset time : "+ (float)time/10000000 + "\nList Count : " + list.Count);
+            
             return list;
         }
+        
+        
         
         //ノーツ生成時の初期位置を計算する関数
         public static float CalcuSpawnPosition(long nowTime, long targetTime)
@@ -72,6 +90,62 @@ namespace Game
 
             return y;
         }
-        
+
+
+
+        public static void SpawnNote(List<NotesData> notesList, GameObject notesArea, GameObject noteWide,
+            GameObject noteSmall)
+        {
+            //最初のノーツを出す
+            while (true)
+            {
+                //値を受け取る
+                var targetTime = notesList[0].TargetTime;
+                var timer = notesList[0].Timer;
+
+                //描画されるであろう位置を計算
+                var spawnPosition = CalcuSpawnPosition(timer.StopWatch.ElapsedTicks, targetTime);
+
+                //画面外でなければ描画
+                if (GameConstants.NOTES_AREA_HEIGHT > spawnPosition)
+                {
+                    var lanesPosition = notesList[0].LanesPosition;
+
+                    for (int i = 0; i < GameConstants.POSITION_DATA.Length; i++)
+                    {
+                        if ((lanesPosition | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
+                        {
+                            GameObject note;
+                            if (i % 2 == 0)
+                            {
+                                note = Instantiate(noteWide);
+                            }
+                            else
+                            {
+                                note = Instantiate(noteSmall);
+                            }
+
+                            note.transform.SetParent(notesArea.GetComponent<Transform>());
+                            note.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                            note.GetComponent<RectTransform>().localPosition = new Vector2(
+                                GameConstants.LANE_POSITION_DATA_X[i],
+                                GameConstants.DISPLAY_UPPER_END_Y - spawnPosition);
+
+                            note.GetComponent<Note>().TargetTime = targetTime;
+                            note.GetComponent<Note>().Timer = timer;
+
+                            //先頭を削除
+                            notesList.RemoveAt(0);
+                        }
+                    }
+
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+
     }
 }

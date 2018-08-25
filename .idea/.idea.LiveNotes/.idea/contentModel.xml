@@ -18,6 +18,7 @@
             <e p="Note.cs" t="Include" />
             <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
+            <e p="NotesTimer.cs" t="Include" />
           </e>
           <e p="uiButtons.cs" t="Include" />
           <e p="uiKeyInputs.cs" t="Include" />
