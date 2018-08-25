@@ -9,7 +9,7 @@ namespace Game
 		public Stopwatch Timer { get; set; }
 
 		void Start () {
-		
+			
 		}
 	
 		// Update is called once per frame
