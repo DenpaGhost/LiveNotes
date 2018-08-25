@@ -15,5 +15,7 @@
         public static byte Min { get; set; }
         
         public static byte Speed { get; set; }
+        
+        public static byte OffsetTime { get; set; }
     }
 }

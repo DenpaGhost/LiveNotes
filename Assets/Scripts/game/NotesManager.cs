@@ -35,6 +35,8 @@ namespace Game
             //最初のノーツを出す
             while(true)
             {
+                var sw = new Stopwatch();
+                
                 //値を受け取る
                 var targetTime = _notesList[0].TargetTime;
                 
@@ -67,7 +69,7 @@ namespace Game
                             note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i], GameConstants.DISPLAY_UPPER_END_Y - spawnPosition);
 
                             note.GetComponent<Note>().TargetTime = targetTime;
-                            
+                            note.GetComponent<Note>().Timer = sw;
 
                             //先頭を削除
                             _notesList.RemoveAt(0);
@@ -77,6 +79,7 @@ namespace Game
                 }
                 else
                 {
+                    sw.Start();
                     break;
                 }
 

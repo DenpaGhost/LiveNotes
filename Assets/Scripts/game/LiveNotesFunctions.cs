@@ -56,7 +56,7 @@ namespace Game
                     for (var i = 0; i < tmp.Length; i++)
                     {
                         list.Add(new NotesData(tmp[i],
-                            GameParameters.Interval * i + GameConstants.WAIT_FOR_START_TIME));
+                            GameParameters.Interval * i));
                     }
                 }
                 
