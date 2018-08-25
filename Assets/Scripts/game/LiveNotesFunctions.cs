@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Constants;
 using UnityEngine.Timeline;
+using Random = UnityEngine.Random;
 
 namespace Game
 {
@@ -52,20 +54,20 @@ namespace Game
         public static List<NotesData> PushNotesDataToList(List<NotesData> list)
         {
             long time = 0;
+            var counter = 0;
             var timer = new NotesTimer();
             
             while (list.Count <= GameParameters.MinListCount)
             {
-                var counter = 0;
                 var tmp = Generate(GameParameters.Num,GameParameters.Max,GameParameters.Min);
 
                 for (var repeat = 0; repeat < GameParameters.Repeat; repeat++)
                 {
                     for (var i = 0; i < tmp.Length; i++)
                     {
-                        counter += i;
                         time = GameParameters.Interval * counter + GameParameters.OffsetTime;
                         list.Add(new NotesData(tmp[i], time, timer));
+                        counter ++;
                     }
                 }
                 
@@ -74,7 +76,7 @@ namespace Game
             timer.StopWatch.Start();
             
             //次回のオフセットを設定
-            GameParameters.OffsetTime = time;
+            GameParameters.OffsetTime = time + GameParameters.Interval - GameParameters.OffsetTime;
             
             Debug.Log("Offset time : "+ (float)time/10000000 + "\nList Count : " + list.Count);
             
@@ -96,7 +98,6 @@ namespace Game
         public static void SpawnNote(List<NotesData> notesList, GameObject notesArea, GameObject noteWide,
             GameObject noteSmall)
         {
-            //最初のノーツを出す
             while (true)
             {
                 //値を受け取る
@@ -138,7 +139,6 @@ namespace Game
                             notesList.RemoveAt(0);
                         }
                     }
-
                 }
                 else
                 {

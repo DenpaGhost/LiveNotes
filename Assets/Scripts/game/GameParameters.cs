@@ -3,7 +3,7 @@
     public static class GameParameters
     {
 
-        private static long _offsetTime = 30000000;
+        private static long _offsetTime;// = 30000000;
         private static int _minListCount = 32;
 
         public static long Interval { get; set; }
@@ -19,6 +19,8 @@
         public static byte Min { get; set; }
         
         public static byte Speed { get; set; }
+
+        public static byte NoteLength { get; set; }
 
         public static long OffsetTime
         {

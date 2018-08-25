@@ -12,7 +12,6 @@ namespace Game
     {
 
         private List<NotesData> _notesList;
-
         public GameObject _notesArea, _noteSmall, _noteWide;
 
         // Use this for initialization
@@ -25,6 +24,7 @@ namespace Game
             GameParameters.Num = 20;
             GameParameters.Repeat = 1;
             GameParameters.Speed = 5;
+            GameParameters.NoteLength = 4;
             
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
@@ -36,11 +36,6 @@ namespace Game
             _notesList = new List<NotesData>();
             _notesList = Lf.PushNotesDataToList(_notesList);
 
-            for (int i = 0; i < _notesList.Count; i++)
-            {
-                Debug.Log("Lane : " + _notesList[i].LanesPosition +"\ntargetTime : " + _notesList[i].TargetTime);
-            }
-            
             //最初のノーツを出す
             Lf.SpawnNote(_notesList,_notesArea,_noteWide,_noteSmall);
 
@@ -52,7 +47,6 @@ namespace Game
             
             if (_notesList.Count < GameParameters.MinListCount)
             {
-                Debug.Log("aaaaa");
                 _notesList = Lf.PushNotesDataToList(_notesList);
             }
             
