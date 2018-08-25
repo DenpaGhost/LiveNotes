@@ -66,9 +66,9 @@ namespace Game
         }
         
         //ノーツ生成時の初期位置を計算する関数
-        public static double CalcuSpawnPosition(long nowTime, long targetTime)
+        public static float CalcuSpawnPosition(long nowTime, long targetTime)
         {
-            var y = nowTime / targetTime * GameConstants.NOTES_AREA_HEIGHT * GameParameters.Speed;
+            var y = (targetTime - nowTime) / 100000 * GameParameters.Speed;
 
             return y;
         }

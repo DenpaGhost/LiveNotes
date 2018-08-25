@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using Constants;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 using Lf = Game.LiveNotesFunctions;
 
 namespace Game
 {
     public class NotesManager : MonoBehaviour
     {
-
-        private Stopwatch _sw;
 
         private List<NotesData> _notesList;
 
@@ -26,16 +26,11 @@ namespace Game
             GameParameters.Repeat = 1;
             GameParameters.Speed = 1;
             
-            //Stopwatchのインスタンス生成
-            _sw = new Stopwatch();
-            
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
 
             //Listに詰めこむ
             _notesList = Lf.FirstPushNotesDataToList();
-            
-            
             
             //最初のノーツを出す
             while(true)
@@ -46,17 +41,19 @@ namespace Game
                 //描画されるであろう位置を計算
                 var spawnPosition = Lf.CalcuSpawnPosition(0, targetTime);
                 
+                Debug.Log(spawnPosition);
+                
                 //画面外でなければ描画
                 if (GameConstants.NOTES_AREA_HEIGHT > spawnPosition)
                 {
-                    var position = _notesList[0].Position;
+                    var lanesPosition = _notesList[0].LanesPosition;
 
                     for (int i = 0; i < GameConstants.POSITION_DATA.Length; i++)
                     {
-                        if ((position | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
+                        if ((lanesPosition | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
                         {
                             GameObject note;
-                            if (i % 2 != 0)
+                            if (i % 2 == 0)
                             {
                                 note = Instantiate(_noteWide);
                             }
@@ -66,9 +63,14 @@ namespace Game
                             }
                             
                             note.transform.SetParent(_notesArea.GetComponent<Transform>());
-                            note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i], GameConstants.DISPLAY_UPPER_END_Y);
                             note.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                            note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i], GameConstants.DISPLAY_UPPER_END_Y - spawnPosition);
+
+                            note.GetComponent<Note>().TargetTime = targetTime;
                             
+
+                            //先頭を削除
+                            _notesList.RemoveAt(0);
                         }
                     }
                     
@@ -80,9 +82,6 @@ namespace Game
 
             } 
 
-            
-            
-            _sw.Start();
         }
 
         // Update is called once per frame

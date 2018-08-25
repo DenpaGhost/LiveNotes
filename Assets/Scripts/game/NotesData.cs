@@ -3,13 +3,13 @@ namespace Game
 {
     public class NotesData
     {
-        public NotesData(int position, long targetTime)
+        public NotesData(int lanesPosition, long targetTime)
         {
-            Position = position;
+            LanesPosition = lanesPosition;
             TargetTime = targetTime;
         }
 
-        public int Position { get; private set; }
+        public int LanesPosition { get; private set; }
 
         public long TargetTime { get; private set; }
     }
