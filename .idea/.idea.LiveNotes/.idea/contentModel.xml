@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\denpa\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_LiveNotes.-663530015.00" t="ExcludeRecursive" />
+    <e p="\988581ee" t="IncludeRecursive" />
+    <e p="\app" t="IncludeRecursive" />
+    <e p="C:\Users\denpa\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\denpa\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\denpa\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_LiveNotes.-663530015.00" t="ExcludeRecursive" />
     <e p="E:\OneDrive\UnityProject\LiveNotes" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Constants.cs" t="Include" />
           <e p="dialogButtons.cs" t="Include" />
           <e p="game" t="Include">
             <e p="gameParameters.cs" t="Include" />
             <e p="LiveNotesFunctions.cs" t="Include" />
             <e p="Note.cs" t="Include" />
+            <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>

@@ -1,58 +1,96 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using game;
+using Constants;
 using UnityEngine;
+using Lf = Game.LiveNotesFunctions;
 
-public class NotesManager : MonoBehaviour {
+namespace Game
+{
+    public class NotesManager : MonoBehaviour
+    {
 
-	private gameParameters _parameters;
-	private byte[] Notes;
-	private double _interval;
-	private LiveNotesFunctions _functions;
-	private Stopwatch sw;
-	
-	public GameObject _notesArea,_noteSmall,_noteWide;
+        private Stopwatch _sw;
 
-	// Use this for initialization
-	public void Start ()
-	{
-		//数値共有用オブジェクトのインスタンス生成
-		_parameters = new gameParameters
-		{
-			Bpm = 120,
-			Max = 1,
-			Min = 1,
-			Num = 20,
-			Repeat = 1
-		};
+        private List<NotesData> _notesList;
 
-		//関数クラスのインスタンス生成
-		_functions = new LiveNotesFunctions();
-		
-		//配列確保
-		Notes = new byte[_parameters.Num];
-		
-		//刻み秒数計算
-		_interval = 1000 / _parameters.Bpm;
-		
-		sw = new Stopwatch();
-		sw.Start();
-	}
-	
-	// Update is called once per frame
-	public void Update ()
-	{
-		if (sw.ElapsedMilliseconds > 1000)
-		{
-			var note = Instantiate(_noteSmall);
-			note.transform.parent = _notesArea.transform;
-			note.GetComponent<RectTransform>().localPosition = new Vector2(0, 390);
-			note.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
-			sw.Stop();sw.Reset();sw.Start();
-		}
+        public GameObject _notesArea, _noteSmall, _noteWide;
 
+        // Use this for initialization
+        public void Start()
+        {
+            // パラメータ代入 TODO:デバッグ用
+            GameParameters.Bpm = 120;
+            GameParameters.Max = 1;
+            GameParameters.Min = 1;
+            GameParameters.Num = 20;
+            GameParameters.Repeat = 1;
+            GameParameters.Speed = 1;
+            
+            //Stopwatchのインスタンス生成
+            _sw = new Stopwatch();
+            
+            //刻み数計算
+            GameParameters.Interval = 600000000 / GameParameters.Bpm;
 
-	}
-	
+            //Listに詰めこむ
+            _notesList = Lf.FirstPushNotesDataToList();
+            
+            
+            
+            //最初のノーツを出す
+            while(true)
+            {
+                //値を受け取る
+                var targetTime = _notesList[0].TargetTime;
+                
+                //描画されるであろう位置を計算
+                var spawnPosition = Lf.CalcuSpawnPosition(0, targetTime);
+                
+                //画面外でなければ描画
+                if (GameConstants.NOTES_AREA_HEIGHT > spawnPosition)
+                {
+                    var position = _notesList[0].Position;
+
+                    for (int i = 0; i < GameConstants.POSITION_DATA.Length; i++)
+                    {
+                        if ((position | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
+                        {
+                            GameObject note;
+                            if (i % 2 != 0)
+                            {
+                                note = Instantiate(_noteWide);
+                            }
+                            else
+                            {
+                                note = Instantiate(_noteSmall);
+                            }
+                            
+                            note.transform.SetParent(_notesArea.GetComponent<Transform>());
+                            note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i], GameConstants.DISPLAY_UPPER_END_Y);
+                            note.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                            
+                        }
+                    }
+                    
+                }
+                else
+                {
+                    break;
+                }
+
+            } 
+
+            
+            
+            _sw.Start();
+        }
+
+        // Update is called once per frame
+        public void Update()
+        {
+            
+
+        }
+
+    }
 }
