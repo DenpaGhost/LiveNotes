@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224769536093381792}
   - component: {fileID: 222784205044644188}
   - component: {fileID: 114914157276503884}
-  - component: {fileID: 114916258016507532}
+  - component: {fileID: 114219629755060352}
   m_Layer: 5
   m_Name: Border
   m_TagString: Border
@@ -29,6 +29,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114219629755060352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1290381885596326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a1dcd0657c86349b5a7f3e9a89ea30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114914157276503884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,17 +67,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114916258016507532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1290381885596326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16546bfc380d4c84a5be2a49ef5daa6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &222784205044644188
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -90,5 +90,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 600}
-  m_SizeDelta: {x: 0, y: 10}
+  m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}

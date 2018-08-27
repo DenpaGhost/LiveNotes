@@ -21,8 +21,10 @@ namespace Game
             //配置
             gameObject.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, GameConstants.JUDGE_LINE_Y + position);
 
+            //目標タイムを越したら...
             if (TargetTime < Timer.ElapsedTicks)
             {
+                //0.5秒は線上で待機
                 if (TargetTime + 5000000 < Timer.ElapsedTicks)
                 {
                     Destroy(gameObject);

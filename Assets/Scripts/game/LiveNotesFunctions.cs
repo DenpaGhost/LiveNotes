@@ -152,6 +152,7 @@ namespace Game
                                 note = Instantiate(noteSmall);
                             }
 
+                            //ノーツ生成
                             note.transform.SetParent(notesArea.GetComponent<Transform>());
                             note.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
                             note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i],GameConstants.JUDGE_LINE_Y +  spawnPosition);
