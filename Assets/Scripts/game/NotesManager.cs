@@ -17,12 +17,12 @@ namespace Game
         public void Start()
         {
             // パラメータ代入 TODO:デバッグ用
-            GameParameters.Bpm = 240;
+            GameParameters.Bpm = 360;
             GameParameters.Max = 1;
             GameParameters.Min = 1;
             GameParameters.Num = 20;
-            GameParameters.Repeat = 1;
-            GameParameters.Speed = 5;
+            GameParameters.Repeat = 8;
+            GameParameters.Speed = 3;
             GameParameters.NoteLength = 4;
             
             //刻み数計算

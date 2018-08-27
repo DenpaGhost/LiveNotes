@@ -14,6 +14,7 @@
           <e p="dialogButtons.cs" t="Include" />
           <e p="game" t="Include">
             <e p="Border.cs" t="Include" />
+            <e p="GameKeyManager.cs" t="Include" />
             <e p="gameParameters.cs" t="Include" />
             <e p="LiveNotesFunctions.cs" t="Include" />
             <e p="Note.cs" t="Include" />
