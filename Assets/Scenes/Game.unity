@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 177072239}
   - component: {fileID: 177072238}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Lane3#
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Color: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1185,8 +1185,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1531246523}
   - {fileID: 753576000}
+  - {fileID: 1531246523}
   - {fileID: 177072237}
   - {fileID: 1490266783}
   - {fileID: 389461456}
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
+  m_Color: {r: 0.93333334, g: 0.93333334, b: 0.93333334, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1243,7 +1243,7 @@ GameObject:
   - component: {fileID: 753576002}
   - component: {fileID: 753576001}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Lane1#
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1260,7 +1260,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 512106775}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Color: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2392,7 +2392,7 @@ GameObject:
   - component: {fileID: 1531246525}
   - component: {fileID: 1531246524}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Lane2#
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2409,7 +2409,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 512106775}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Color: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2803,6 +2803,8 @@ MonoBehaviour:
   _notesArea: {fileID: 389461455}
   _noteSmall: {fileID: 1585471419318850, guid: 1257415bc9868f445bbf5db29f1742c7, type: 2}
   _noteWide: {fileID: 1858384313463876, guid: faea000729961a047acc26fc53523436, type: 2}
+  _noteBorder: {fileID: 1290381885596326, guid: d60db07b85c2a41419fc596e766130e0,
+    type: 2}
 --- !u!1 &2115650514
 GameObject:
   m_ObjectHideFlags: 0

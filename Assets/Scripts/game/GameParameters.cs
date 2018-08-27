@@ -1,9 +1,9 @@
-﻿namespace Game
+﻿using System.Collections.Generic;
+
+namespace Game
 {
     public static class GameParameters
     {
-
-        private static long _offsetTime;// = 30000000;
         private static int _minListCount = 32;
 
         public static long Interval { get; set; }
@@ -22,16 +22,12 @@
 
         public static byte NoteLength { get; set; }
 
-        public static long OffsetTime
-        {
-            get { return _offsetTime; }
-            set { _offsetTime = value; }
-        }
-
         public static int MinListCount
         {
             get { return _minListCount; }
             set { _minListCount = value; }
         }
+
+        public static List<NotesData> NotesList { get; set; }
     }
 }

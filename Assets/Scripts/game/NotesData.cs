@@ -1,9 +1,11 @@
 
+using System.Diagnostics;
+
 namespace Game
 {
     public class NotesData
     {
-        public NotesData(int lanesPosition, long targetTime, NotesTimer timer)
+        public NotesData(int lanesPosition, long targetTime, Stopwatch timer)
         {
             LanesPosition = lanesPosition;
             TargetTime = targetTime;
@@ -12,6 +14,6 @@ namespace Game
 
         public int LanesPosition { get; private set; }
         public long TargetTime { get; private set; }
-        public NotesTimer Timer { get; set; }
+        public Stopwatch Timer { get; private set; }
     }
 }

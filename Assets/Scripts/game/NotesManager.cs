@@ -11,14 +11,13 @@ namespace Game
     public class NotesManager : MonoBehaviour
     {
 
-        private List<NotesData> _notesList;
-        public GameObject _notesArea, _noteSmall, _noteWide;
+        public GameObject _notesArea, _noteSmall, _noteWide,_noteBorder;
 
         // Use this for initialization
         public void Start()
         {
             // パラメータ代入 TODO:デバッグ用
-            GameParameters.Bpm = 120;
+            GameParameters.Bpm = 200;
             GameParameters.Max = 1;
             GameParameters.Min = 1;
             GameParameters.Num = 20;
@@ -28,30 +27,23 @@ namespace Game
             
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
-            
-            //リストの最低必要個数を計算
-            GameParameters.MinListCount = (GameParameters.MinListCount / GameParameters.Num + 1) * GameParameters.Num;
 
             //Listに詰めこむ
-            _notesList = new List<NotesData>();
-            _notesList = Lf.PushNotesDataToList(_notesList);
+            GameParameters.NotesList = new List<NotesData>();
+            GameParameters.NotesList = Lf.PushNotesDataToList(GameParameters.NotesList);
+            
+            //リストの最低必要個数を計算
+            GameParameters.MinListCount = GameParameters.NotesList.Count;
 
             //最初のノーツを出す
-            Lf.SpawnNote(_notesList,_notesArea,_noteWide,_noteSmall);
+            Lf.SpawnNote(GameParameters.NotesList,_notesArea,_noteWide,_noteSmall,_noteBorder);
 
         }
 
         // Update is called once per frame
         public void Update()
         {
-            
-            if (_notesList.Count < GameParameters.MinListCount)
-            {
-                _notesList = Lf.PushNotesDataToList(_notesList);
-            }
-            
-            Lf.SpawnNote(_notesList,_notesArea,_noteWide,_noteSmall);
-            
+            Lf.SpawnNote(GameParameters.NotesList,_notesArea,_noteWide,_noteSmall,_noteBorder);
         }
 
     }
