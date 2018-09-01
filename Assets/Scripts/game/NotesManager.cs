@@ -35,6 +35,9 @@ namespace Game
             //判定線オブジェクトのAudioSource取得
             GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
             
+            //判定表示UI Textの初期化
+            GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
+            
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
 

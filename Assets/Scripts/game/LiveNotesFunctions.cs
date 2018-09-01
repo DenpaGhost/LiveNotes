@@ -5,6 +5,7 @@ using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using Constants;
 using UnityEngine.Timeline;
+using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
@@ -173,6 +174,14 @@ namespace Game
                     break;
                 }
             }
+        }
+
+        public static void SetJudgeText(string text)
+        {
+            GameParameters.JudgeTextObject.GetComponent<Text>().text = text;
+            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Stop();
+            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Reset();
+            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Start();
         }
         
     }

@@ -36,10 +36,9 @@ namespace Game
         public static List<GameObject>[] LaneQueue
         {
             get { return _laneQueueList; }
-            set { _laneQueueList = value; }
         }
         
         public static AudioSource JudgeLineSpeaker { get; set; }
-        
+        public static GameObject JudgeTextObject { get; set; }
     }
 }

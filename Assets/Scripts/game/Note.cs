@@ -55,25 +55,25 @@ namespace Game
                 if (GameConstants.JUDGE_PERFECT + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_PERFECT - TargetTime < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
-                    Debug.Log("Perfect!" + (TargetTime - Timer.ElapsedTicks));
+                    Lf.SetJudgeText("Perfect!!!");
                     Destroy(gameObject);
                 }
                 else if (GameConstants.JUDGE_GREAT + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_GREAT - TargetTime < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
-                    Debug.Log("Great!" + (TargetTime - Timer.ElapsedTicks));
+                    Lf.SetJudgeText("Great!!");
                     Destroy(gameObject);
                 } 
                 else if (GameConstants.JUDGE_GOOD + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_GOOD - TargetTime < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
-                    Debug.Log("Good!" + (TargetTime - Timer.ElapsedTicks));
+                    Lf.SetJudgeText("Good!");
                     Destroy(gameObject);
                 } 
                 else if (GameConstants.JUDGE_MISS + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_MISS - TargetTime < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
-                    Debug.Log("Miss!" + (TargetTime - Timer.ElapsedTicks));
+                    Lf.SetJudgeText("Miss...");
                     Destroy(gameObject);
                 }
                 

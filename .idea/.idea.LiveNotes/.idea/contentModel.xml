@@ -16,6 +16,7 @@
             <e p="Border.cs" t="Include" />
             <e p="GameKeyManager.cs" t="Include" />
             <e p="gameParameters.cs" t="Include" />
+            <e p="JudgeTextManager.cs" t="Include" />
             <e p="LiveNotesFunctions.cs" t="Include" />
             <e p="Note.cs" t="Include" />
             <e p="NotesData.cs" t="Include" />
