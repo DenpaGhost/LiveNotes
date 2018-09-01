@@ -33,14 +33,10 @@ namespace Game
 					doesCheckListCount = true;
 				}
 				
+				GameParameters.JudgeLineSpeaker.PlayOneShot(soundClick);
 				Destroy(gameObject);
 			}
 			
-		}
-
-		private void OnDestroy()
-		{
-			GameParameters.JudgeLineSpeaker.PlayOneShot(soundClick);
 		}
 		
 	}
