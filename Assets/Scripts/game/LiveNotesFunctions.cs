@@ -161,7 +161,10 @@ namespace Game
 
                             //先頭を削除
                             notesList.RemoveAt(0);
-                            
+
+                            //キューに追加
+                            GameParameters.LaneQueue[i].Add(note);
+
                         }
                     }
                 }

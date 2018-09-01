@@ -40,8 +40,7 @@ namespace Game
 
 		private void OnDestroy()
 		{
-			var audioSource = GameObject.Find("judgeBorder").GetComponent<AudioSource>();
-			audioSource.PlayOneShot(soundClick);
+			GameParameters.JudgeLineSpeaker.PlayOneShot(soundClick);
 		}
 		
 	}

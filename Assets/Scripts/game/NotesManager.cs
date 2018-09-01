@@ -11,7 +11,7 @@ namespace Game
     public class NotesManager : MonoBehaviour
     {
 
-        public GameObject _notesArea, _noteSmall, _noteWide,_noteBorder;
+        public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder;
 
         // Use this for initialization
         public void Start()
@@ -25,6 +25,15 @@ namespace Game
             GameParameters.Speed = 3;
             GameParameters.NoteLength = 4;
             
+            //ノーツキュー初期化
+            for (int i = 0; i < GameParameters.LaneQueue.Length; i++)
+            {
+                GameParameters.LaneQueue[i] = new List<GameObject>();
+            }
+            
+            //判定線オブジェクトのAudioSource取得
+            GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
+            
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
 
@@ -36,14 +45,14 @@ namespace Game
             GameParameters.MinListCount = GameParameters.NotesList.Count;
 
             //最初のノーツを出す
-            Lf.SpawnNote(GameParameters.NotesList,_notesArea,_noteWide,_noteSmall,_noteBorder);
+            Lf.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
 
         }
 
         // Update is called once per frame
         public void Update()
         {
-            Lf.SpawnNote(GameParameters.NotesList,_notesArea,_noteWide,_noteSmall,_noteBorder);
+            Lf.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
         }
 
     }

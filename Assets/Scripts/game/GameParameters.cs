@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Game
 {
     public static class GameParameters
     {
         private static int _minListCount = 32;
+        private static List<GameObject>[] _laneQueueList = new List<GameObject>[7];
 
         public static long Interval { get; set; }
 
@@ -29,5 +31,13 @@ namespace Game
         }
 
         public static List<NotesData> NotesList { get; set; }
+
+        public static List<GameObject>[] LaneQueue
+        {
+            get { return _laneQueueList; }
+            set { _laneQueueList = value; }
+        }
+        
+        public static AudioSource JudgeLineSpeaker { get; set; }
     }
 }
