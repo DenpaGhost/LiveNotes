@@ -52,25 +52,25 @@ namespace Game
             if (GameParameters.LaneQueue[Lane][0] == gameObject && Input.GetButtonDown(GameConstants.KEY_NAME[Lane]))
             {
 
-                if (GameConstants.JUDGE_PERFECT + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_PERFECT - TargetTime < Timer.ElapsedTicks)
+                if (TargetTime + GameConstants.JUDGE_PERFECT > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
                     Lf.SetJudgeText("Perfect!!!");
                     Destroy(gameObject);
                 }
-                else if (GameConstants.JUDGE_GREAT + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_GREAT - TargetTime < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_GREAT > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
                     Lf.SetJudgeText("Great!!");
                     Destroy(gameObject);
                 } 
-                else if (GameConstants.JUDGE_GOOD + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_GOOD - TargetTime < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_GOOD > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
                     Lf.SetJudgeText("Good!");
                     Destroy(gameObject);
                 } 
-                else if (GameConstants.JUDGE_MISS + Timer.ElapsedTicks > TargetTime && GameConstants.JUDGE_MISS - TargetTime < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_MISS > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS < Timer.ElapsedTicks)
                 {
                     GameParameters.LaneQueue[Lane].RemoveAt(0);
                     Lf.SetJudgeText("Miss...");
