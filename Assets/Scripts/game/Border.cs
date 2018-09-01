@@ -9,6 +9,7 @@ namespace Game
 
 		public long TargetTime { private get; set; }
 		public Stopwatch Timer { private get; set; }
+		public AudioClip soundClick;
 
 		private bool doesCheckListCount = false;
 	
@@ -36,7 +37,13 @@ namespace Game
 			}
 			
 		}
-	}
 
+		private void OnDestroy()
+		{
+			var audioSource = GameObject.Find("judgeBorder").GetComponent<AudioSource>();
+			audioSource.PlayOneShot(soundClick);
+		}
+		
+	}
 }
 
