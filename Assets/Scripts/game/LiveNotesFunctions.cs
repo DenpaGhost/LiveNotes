@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using Constants;
 using UnityEngine.Timeline;
@@ -94,8 +95,6 @@ namespace Game
                 
             }
             
-            Debug.Log(counter);
-            Debug.Log((float)offset/10000000);
             return list;
         }
         
@@ -138,7 +137,7 @@ namespace Game
                     
                     var lanesPosition = notesList[0].LanesPosition;
 
-                    for (int i = 0; i < GameConstants.POSITION_DATA.Length; i++)
+                    for (var i = 0; i < GameConstants.POSITION_DATA.Length; i++)
                     {
                         if ((lanesPosition | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
                         {
@@ -158,6 +157,7 @@ namespace Game
                             note.GetComponent<RectTransform>().localPosition = new Vector2(GameConstants.LANE_POSITION_DATA_X[i],GameConstants.JUDGE_LINE_Y +  spawnPosition);
                             note.GetComponent<Note>().TargetTime = targetTime;
                             note.GetComponent<Note>().Timer = timer;
+                            note.GetComponent<Note>().Lane = i;
 
                             //先頭を削除
                             notesList.RemoveAt(0);
@@ -174,6 +174,6 @@ namespace Game
                 }
             }
         }
-
+        
     }
 }

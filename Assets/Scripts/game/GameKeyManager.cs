@@ -4,6 +4,7 @@ using UnityEngine;
 using Constants;
 using UnityEngine.Experimental.UIElements;
 using Image = UnityEngine.UI.Image;
+using Lf = Game.LiveNotesFunctions;
 
 public class GameKeyManager : MonoBehaviour
 {
@@ -26,43 +27,43 @@ public class GameKeyManager : MonoBehaviour
 	private void KeyDownEvents()
 	{
 		//A鍵
-		if (Input.GetKeyDown(KeyCode.S))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[0]))
 		{
 			keyA.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE_PUSH;
 		}
 		
 		//A#鍵
-		if (Input.GetKeyDown(KeyCode.D))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[1]))
 		{
 			keyAs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK_PUSH;
 		}
 		
 		//B鍵
-		if (Input.GetKeyDown(KeyCode.F))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[2]))
 		{
 			keyB.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE_PUSH;
 		}
 		
 		//B#鍵
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[3]))
 		{
 			keyBs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK_PUSH;
 		}
 		
 		//C鍵
-		if (Input.GetKeyDown(KeyCode.J))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[4]))
 		{
 			keyC.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE_PUSH;
 		}
 		
 		//C#鍵
-		if (Input.GetKeyDown(KeyCode.K))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[5]))
 		{
 			keyCs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK_PUSH;
 		}
 		
 		//D鍵
-		if (Input.GetKeyDown(KeyCode.L))
+		if (Input.GetButtonDown(GameConstants.KEY_NAME[6]))
 		{
 			keyD.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE_PUSH;
 		}
@@ -71,43 +72,43 @@ public class GameKeyManager : MonoBehaviour
 	private void KeyUpEvent()
 	{
 		//A鍵
-		if (Input.GetKeyUp(KeyCode.S))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[0]))
 		{
 			keyA.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE;
 		}
 		
 		//A#鍵
-		if (Input.GetKeyUp(KeyCode.D))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[1]))
 		{
 			keyAs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK;
 		}
 		
 		//B鍵
-		if (Input.GetKeyUp(KeyCode.F))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[2]))
 		{
 			keyB.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE;
 		}
 		
 		//B#鍵
-		if (Input.GetKeyUp(KeyCode.Space))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[3]))
 		{
 			keyBs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK;
 		}
 		
 		//C鍵
-		if (Input.GetKeyUp(KeyCode.J))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[4]))
 		{
 			keyC.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE;
 		}
 		
 		//C#鍵
-		if (Input.GetKeyUp(KeyCode.K))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[5]))
 		{
 			keyCs.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_BLACK;
 		}
 		
 		//D鍵
-		if (Input.GetKeyUp(KeyCode.L))
+		if (Input.GetButtonUp(GameConstants.KEY_NAME[6]))
 		{
 			keyD.GetComponent<Image>().color = ConstantsColors.KEY_COLOR_WHITE;
 		}

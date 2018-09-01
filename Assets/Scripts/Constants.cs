@@ -1,14 +1,22 @@
+using System.Security.Cryptography;
 using UnityEngine;
 
 namespace Constants
 {
     public static class GameConstants
     {
-        public const float DISPLAY_UPPER_END_Y = 400,JUDGE_LINE_Y = -375;
+        public const float DISPLAY_UPPER_END_Y = 400, JUDGE_LINE_Y = -375;
         public const float NOTES_AREA_HEIGHT = DISPLAY_UPPER_END_Y - JUDGE_LINE_Y;
-        public const long DEFAULT_OFFSET=30000000;
+        public const long DEFAULT_OFFSET = 30000000;
         public static readonly int[] POSITION_DATA = {1, 2, 4, 8, 16, 32, 64};
+        public static readonly string[] KEY_NAME = {"KeyA","KeyAs","KeyB","KeyBs","KeyC","KeyCs","KeyD"};
         public static readonly float[] LANE_POSITION_DATA_X = {-168.5f, -112.5f, -56.25f, 0, 56.25f, 112.5f, 168.5f};
+        public const long NOTE_IS_ON_LINE_WAIT_TIME = 1200000;
+
+        public const long JUDGE_MISS = 1200000;
+        public const long JUDGE_GOOD = 600000;
+        public const long JUDGE_GREAT = 300000;
+        public const long JUDGE_PERFECT = 150000;
     }
 
     public static class ConstantsColors

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game
@@ -39,5 +40,6 @@ namespace Game
         }
         
         public static AudioSource JudgeLineSpeaker { get; set; }
+        
     }
 }
