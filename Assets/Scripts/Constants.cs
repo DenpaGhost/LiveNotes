@@ -12,7 +12,7 @@ namespace Constants
         public static readonly string[] KEY_NAME = {"KeyA","KeyAs","KeyB","KeyBs","KeyC","KeyCs","KeyD"};
         public static readonly float[] LANE_POSITION_DATA_X = {-168.5f, -112.5f, -56.25f, 0, 56.25f, 112.5f, 168.5f};
         public const long NOTE_IS_ON_LINE_WAIT_TIME = 1200000;
-        public const long JUDGE_TEXT_INVISIBLE_TIME = 10000000;
+        public const long JUDGE_TEXT_INVISIBLE_TIME = 5000000;
 
         public const long JUDGE_MISS = 1200000;
         public const long JUDGE_GOOD = 600000;

@@ -7,7 +7,12 @@ namespace Game
 {
     public class JudgeTextManager : MonoBehaviour
     {
-        public Stopwatch stopwatch = new Stopwatch();
+        public Stopwatch stopwatch;
+
+        private void Start()
+        {
+            stopwatch = new Stopwatch();
+        }
 
         private void Update()
         {
