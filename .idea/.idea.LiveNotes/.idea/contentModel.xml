@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="\988581ee" t="IncludeRecursive" />
-    <e p="\app" t="IncludeRecursive" />
     <e p="C:\Users\denpa\.Rider2018.2\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\denpa\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\denpa\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_LiveNotes.-663530015.00" t="ExcludeRecursive" />

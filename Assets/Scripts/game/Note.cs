@@ -36,7 +36,7 @@ namespace Game
         private void IsPassedTargetTime()
         {
             //線上で待機
-            if (TargetTime + GameConstants.NOTE_IS_ON_LINE_WAIT_TIME < Timer.ElapsedTicks)
+            if (TargetTime + GameConstants.NOTE_IS_ON_LINE_WAIT_TIME <= Timer.ElapsedTicks)
             {
                 Destroy(gameObject);
             }
@@ -51,22 +51,22 @@ namespace Game
             if (GameParameters.LaneQueue[Lane][0] == gameObject && Input.GetButtonDown(GameConstants.KEY_NAME[Lane]))
             {
 
-                if (TargetTime + GameConstants.JUDGE_PERFECT > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT < Timer.ElapsedTicks)
+                if (TargetTime + GameConstants.JUDGE_PERFECT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Perfect!!!");
                     Destroy(gameObject);
                 }
-                else if (TargetTime + GameConstants.JUDGE_GREAT > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_GREAT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Great!!");
                     Destroy(gameObject);
                 } 
-                else if (TargetTime + GameConstants.JUDGE_GOOD > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_GOOD >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Good!");
                     Destroy(gameObject);
                 } 
-                else if (TargetTime + GameConstants.JUDGE_MISS > Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS < Timer.ElapsedTicks)
+                else if (TargetTime + GameConstants.JUDGE_MISS >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Miss...");
                     Destroy(gameObject);

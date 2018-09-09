@@ -16,8 +16,8 @@ namespace Constants
 
         public const long JUDGE_MISS = 1200000;
         public const long JUDGE_GOOD = 600000;
-        public const long JUDGE_GREAT = 300000;
-        public const long JUDGE_PERFECT = 150000;
+        public const long JUDGE_GREAT = 400000;
+        public const long JUDGE_PERFECT = 200000;
     }
 
     public static class ConstantsColors

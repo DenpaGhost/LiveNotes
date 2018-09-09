@@ -23,7 +23,7 @@ namespace Game
 			gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, GameConstants.JUDGE_LINE_Y + position);
 
 			//目標の時間になったら...
-			if (TargetTime < Timer.ElapsedTicks)
+			if (TargetTime <= Timer.ElapsedTicks)
 			{
 				//リスト項目数を確認
 				if (GameParameters.NotesList.Count < GameParameters.MinListCount && !doesCheckListCount)
@@ -33,6 +33,7 @@ namespace Game
 					doesCheckListCount = true;
 				}
 				
+				GameParameters.JudgeLineSpeaker.Stop();
 				GameParameters.JudgeLineSpeaker.PlayOneShot(soundClick);
 				Destroy(gameObject);
 			}
