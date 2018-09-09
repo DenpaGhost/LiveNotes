@@ -3,7 +3,6 @@ using System.Diagnostics;
 using UnityEngine;
 using Lf = Game.LiveNotesFunctions;
 using Constants;
-using Debug = UnityEngine.Debug;
 
 namespace Game
 {
@@ -13,6 +12,8 @@ namespace Game
         public Stopwatch Timer { private get; set; }
         public int Lane { private get; set; }
         public Action GetButtonDownFunction { get; set; }
+        
+        private GameConstants.Judge _myJudge = GameConstants.Judge.Miss;
 
         // Update is called once per frame
         private void Update ()
@@ -54,16 +55,19 @@ namespace Game
                 if (TargetTime + GameConstants.JUDGE_PERFECT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Perfect!!!");
+                    _myJudge = GameConstants.Judge.Perfect;
                     Destroy(gameObject);
                 }
                 else if (TargetTime + GameConstants.JUDGE_GREAT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Great!!");
+                    _myJudge = GameConstants.Judge.Great;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_GOOD >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD <= Timer.ElapsedTicks)
                 {
                     Lf.SetJudgeText("Good!");
+                    _myJudge = GameConstants.Judge.Good;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_MISS >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS <= Timer.ElapsedTicks)
@@ -77,6 +81,28 @@ namespace Game
 
         private void OnDestroy()
         {
+            switch (_myJudge)
+            {
+                case GameConstants.Judge.Perfect:
+                    GameParameters.Perfect+=1;
+                    break;
+                
+                case GameConstants.Judge.Great :
+                    GameParameters.Great+=1;
+                    break;
+                
+                case GameConstants.Judge.Good:
+                    GameParameters.Good+=1;
+                    break;
+                
+                default:
+                    GameParameters.Miss+=1;
+                    break;        
+            }
+
+            GameParameters.NotesCount += 1;
+            
+            Lf.SetJudgeCount(_myJudge);
             GameParameters.LaneQueue[Lane].RemoveAt(0);
         }
     }

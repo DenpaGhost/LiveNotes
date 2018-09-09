@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace Game
@@ -40,5 +41,16 @@ namespace Game
         
         public static AudioSource JudgeLineSpeaker { get; set; }
         public static GameObject JudgeTextObject { get; set; }
+
+        public static GameObject PerfectTextView { get; set; }
+        public static GameObject GreatTextView { get; set; }
+        public static GameObject GoodTextView { get; set; }
+        public static GameObject MissTextView { get; set; }
+
+        public static ulong Perfect { get; set; }
+        public static ulong Great { get; set; }
+        public static ulong Good { get; set; }
+        public static ulong Miss { get; set; }
+        public static ulong NotesCount { get; set; }
     }
 }

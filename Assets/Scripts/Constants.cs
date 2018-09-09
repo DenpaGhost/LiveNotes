@@ -18,6 +18,14 @@ namespace Constants
         public const long JUDGE_GOOD = 600000;
         public const long JUDGE_GREAT = 400000;
         public const long JUDGE_PERFECT = 200000;
+        
+        public enum Judge
+        {
+            Perfect,
+            Great,
+            Good,
+            Miss
+        }
     }
 
     public static class ConstantsColors

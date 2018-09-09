@@ -13,17 +13,15 @@ namespace Game
 {
     public class LiveNotesFunctions : MonoBehaviour
     {
-        
-        
         //フレーズを作る関数
         public static int[] Generate(ushort num,byte max,byte min)
         {
 
             //ノーツデータ用配列初期化
-            int[] Notes = new int[num];
+            var notes = new int[num];
             
             //必要な個数ノーツ生成
-            for (var i = 0; i < Notes.Length; i++)
+            for (var i = 0; i < notes.Length; i++)
             {
 
                 //出現ノーツ数を乱数で決める
@@ -39,7 +37,7 @@ namespace Game
                     var task = (byte) Random.Range(0, 7-j);
 				
                     //代入
-                    Notes[i] |= tmp[task];
+                    notes[i] |= tmp[task];
 				
                     //重複しないように後ろにあるのを持ってくる
                     tmp[task] = tmp[tmp.Length-(j+1)];
@@ -48,11 +46,9 @@ namespace Game
 
             }
 
-            return Notes;
+            return notes;
 
         }
-
-        
         
         //リストをいっぱいにするための関数
         public static List<NotesData> PushNotesDataToList(List<NotesData> list)
@@ -73,10 +69,10 @@ namespace Game
             else
             {
                 //画面に残っているノーツの数を取得
-                var serviveNotesCount = GameObject.FindGameObjectsWithTag("Border").Length;
+                var drawNotesCount = GameObject.FindGameObjectsWithTag("Border").Length;
                 
                 //まだリストに残ってる分 + 画面内にいる分
-                offset = (list.Count + serviveNotesCount) * GameParameters.Interval;
+                offset = (list.Count + drawNotesCount) * GameParameters.Interval;
             }
             
             //超えるまで作る
@@ -99,8 +95,6 @@ namespace Game
             return list;
         }
         
-        
-        
         //ノーツ生成時の初期位置を計算する関数
         public static float CalcuSpawnPosition(long nowTime, long targetTime)
         {
@@ -109,8 +103,7 @@ namespace Game
             return y;
         }
 
-
-
+        //キューを読み出してGameObjectを生成する関数
         public static void SpawnNote(List<NotesData> notesList, GameObject notesArea, GameObject noteWide,
             GameObject noteSmall,GameObject noteBorder)
         {
@@ -176,12 +169,72 @@ namespace Game
             }
         }
 
+        //デバッグ用。判定表示。
         public static void SetJudgeText(string text)
         {
             GameParameters.JudgeTextObject.GetComponent<Text>().text = text;
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Stop();
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Reset();
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Start();
+        }
+
+        //左のあっこへ数値を反映する。
+        public static void SetJudgeCount(GameConstants.Judge judge)
+        {
+            switch (judge)
+            {
+                case GameConstants.Judge.Perfect:
+                    GameParameters.PerfectTextView.GetComponent<Text>().text =
+                        String.Format("{0:#,0}", GameParameters.Perfect);
+                    break;
+                
+                case GameConstants.Judge.Great:
+                    GameParameters.GreatTextView.GetComponent<Text>().text =
+                        String.Format("{0:#,0}", GameParameters.Great);
+                    break;
+                
+                case GameConstants.Judge.Good:
+                    GameParameters.GoodTextView.GetComponent<Text>().text=
+                        String.Format("{0:#,0}", GameParameters.Good);
+                    break;
+                
+                default:
+                    GameParameters.MissTextView.GetComponent<Text>().text=
+                        String.Format("{0:#,0}", GameParameters.Miss);
+                    break;
+            }
+        }
+
+        //パラメータ初期化系のやつ
+        public static void GameStartingInit()
+        {
+            //ノーツキュー初期化
+            for (var i = 0; i < GameParameters.LaneQueue.Length; i++)
+            {
+                GameParameters.LaneQueue[i] = new List<GameObject>();
+            }
+            
+            //判定線オブジェクトのAudioSource取得
+            GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
+            
+            //判定表示UI Textの初期化
+            GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
+            
+            //左側の数字出すとこのオブジェクト取得
+            GameParameters.PerfectTextView = GameObject.Find("perfectValue");
+            GameParameters.GreatTextView = GameObject.Find("greatValue");
+            GameParameters.GoodTextView = GameObject.Find("goodValue");
+            GameParameters.MissTextView = GameObject.Find("missValue");
+            
+            //刻み数計算
+            GameParameters.Interval = 600000000 / GameParameters.Bpm;
+
+            //Listに詰めこむ
+            GameParameters.NotesList = new List<NotesData>();
+            GameParameters.NotesList = PushNotesDataToList(GameParameters.NotesList);
+            
+            //リストの最低必要個数を計算
+            GameParameters.MinListCount = GameParameters.NotesList.Count;
         }
         
     }
