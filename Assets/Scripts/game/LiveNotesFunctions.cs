@@ -96,11 +96,19 @@ namespace Game
         }
         
         //ノーツ生成時の初期位置を計算する関数
-        public static float CalcuSpawnPosition(long nowTime, long targetTime)
+        public static float CalcSpawnPosition(long nowTime, long targetTime)
         {
             var y = (targetTime - nowTime) / 100000 * GameParameters.Speed;
 
             return y;
+        }
+        
+        //スコア計算関数
+        public static ulong CalcScore()
+        {
+            return GameParameters.Perfect * GameConstants.SCORE_PERFECT +
+                   GameParameters.Great * GameConstants.SCORE_GREAT +
+                   GameParameters.Good * GameConstants.SCORE_GOOD;
         }
 
         //キューを読み出してGameObjectを生成する関数
@@ -114,7 +122,7 @@ namespace Game
                 var timer = notesList[0].Timer;
 
                 //描画されるであろう位置を計算
-                var spawnPosition = CalcuSpawnPosition(timer.ElapsedTicks, targetTime);
+                var spawnPosition = CalcSpawnPosition(timer.ElapsedTicks, targetTime);
 
                 //画面外でなければ描画
                 if (GameConstants.NOTES_AREA_HEIGHT > spawnPosition)
@@ -203,6 +211,10 @@ namespace Game
                         String.Format("{0:#,0}", GameParameters.Miss);
                     break;
             }
+
+            var score = CalcScore();
+            GameParameters.ScoreTextView.GetComponent<Text>().text=String.Format("{0:#,0}", score);
+            
         }
 
         //パラメータ初期化系のやつ
@@ -221,6 +233,7 @@ namespace Game
             GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
             
             //左側の数字出すとこのオブジェクト取得
+            GameParameters.ScoreTextView = GameObject.Find("scoreValue");
             GameParameters.PerfectTextView = GameObject.Find("perfectValue");
             GameParameters.GreatTextView = GameObject.Find("greatValue");
             GameParameters.GoodTextView = GameObject.Find("goodValue");

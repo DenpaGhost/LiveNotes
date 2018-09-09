@@ -18,6 +18,10 @@ namespace Constants
         public const long JUDGE_GOOD = 600000;
         public const long JUDGE_GREAT = 400000;
         public const long JUDGE_PERFECT = 200000;
+
+        public const ulong SCORE_PERFECT = 6;
+        public const ulong SCORE_GREAT = 3;
+        public const ulong SCORE_GOOD = 1;
         
         public enum Judge
         {

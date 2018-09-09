@@ -42,6 +42,7 @@ namespace Game
         public static AudioSource JudgeLineSpeaker { get; set; }
         public static GameObject JudgeTextObject { get; set; }
 
+        public static GameObject ScoreTextView { get; set; }
         public static GameObject PerfectTextView { get; set; }
         public static GameObject GreatTextView { get; set; }
         public static GameObject GoodTextView { get; set; }

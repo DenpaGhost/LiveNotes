@@ -19,7 +19,7 @@ namespace Game
         private void Update ()
         {
             //描画される位置を計算
-            var position = Lf.CalcuSpawnPosition(Timer.ElapsedTicks, TargetTime);
+            var position = Lf.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
             //配置
             gameObject.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, GameConstants.JUDGE_LINE_Y + position);
 
