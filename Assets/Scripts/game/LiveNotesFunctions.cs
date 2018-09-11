@@ -38,7 +38,7 @@ namespace Game
 				
                     //代入
                     notes[i] = notes[i] | tmp[task];
-				
+                    				
                     //重複しないように後ろにあるのを持ってくる
                     tmp[task] = tmp[tmp.Length-(j+1)];
 
@@ -89,7 +89,6 @@ namespace Game
                         counter ++;
                     }
                 }
-                Debug.Log("きた");
             }
             
             return list;
@@ -141,7 +140,7 @@ namespace Game
 
                     for (var i = 0; i < GameConstants.POSITION_DATA.Length; i++)
                     {
-                        if ((lanesPosition | GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
+                        if ((lanesPosition & GameConstants.POSITION_DATA[i]) == GameConstants.POSITION_DATA[i])
                         {
                             GameObject note;
                             if (i % 2 == 0)
@@ -161,18 +160,18 @@ namespace Game
                             note.GetComponent<Note>().Timer = timer;
                             note.GetComponent<Note>().Lane = i;
 
-                            //先頭を削除
-                            notesList.RemoveAt(0);
-
                             //キューに追加
                             GameParameters.LaneQueue[i].Add(note);
 
                         }
                     }
+                    
+                    //先頭を削除
+                    notesList.RemoveAt(0);
                 }
                 else
                 {
-                    break;
+                    return;
                 }
             }
         }

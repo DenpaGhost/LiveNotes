@@ -21,7 +21,7 @@ namespace Game
             // パラメータ代入 TODO:デバッグ用
             GameParameters.Bpm = 360;
             GameParameters.Max = 1;
-            GameParameters.Min = 1;
+            GameParameters.Min = 0;
             GameParameters.Num = 8;
             GameParameters.Repeat = 4;
             GameParameters.Speed = 4;
