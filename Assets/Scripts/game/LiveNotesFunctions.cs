@@ -14,7 +14,7 @@ namespace Game
     public class LiveNotesFunctions : MonoBehaviour
     {
         //フレーズを作る関数
-        public static int[] Generate(ushort num,byte max,byte min)
+        public static int[] Generate(ushort num, byte max, byte min)
         {
 
             //ノーツデータ用配列初期化
@@ -25,7 +25,7 @@ namespace Game
             {
 
                 //出現ノーツ数を乱数で決める
-                var each = (byte)Random.Range(min,max+1);
+                var each = Random.Range(min, max+1);
 			
                 //ノーツ位置データ
                 byte[] tmp = {1, 2, 4, 8, 16, 32, 64};
@@ -37,7 +37,7 @@ namespace Game
                     var task = (byte) Random.Range(0, 7-j);
 				
                     //代入
-                    notes[i] |= tmp[task];
+                    notes[i] = notes[i] | tmp[task];
 				
                     //重複しないように後ろにあるのを持ってくる
                     tmp[task] = tmp[tmp.Length-(j+1)];
@@ -78,7 +78,7 @@ namespace Game
             //超えるまで作る
             while (list.Count <= GameParameters.MinListCount)
             {
-                var phrase = Generate(GameParameters.Num,GameParameters.Max,GameParameters.Min);
+                var phrase = Generate(GameParameters.Num, GameParameters.Max, GameParameters.Min);
 
                 for (var repeat = 0; repeat < GameParameters.Repeat; repeat++)
                 {
@@ -89,7 +89,7 @@ namespace Game
                         counter ++;
                     }
                 }
-                
+                Debug.Log("きた");
             }
             
             return list;

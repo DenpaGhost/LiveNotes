@@ -22,9 +22,9 @@ namespace Game
             GameParameters.Bpm = 360;
             GameParameters.Max = 1;
             GameParameters.Min = 1;
-            GameParameters.Num = 20;
-            GameParameters.Repeat = 8;
-            GameParameters.Speed = 3;
+            GameParameters.Num = 8;
+            GameParameters.Repeat = 4;
+            GameParameters.Speed = 4;
             GameParameters.NoteLength = 4;
             
             //初期化関数を回す
