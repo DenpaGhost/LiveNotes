@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Runtime.Remoting.Messaging;
 using UnityEngine;
-using Constants;
-using UnityEngine.Timeline;
 using UnityEngine.UI;
-using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
 namespace Game
@@ -227,16 +223,12 @@ namespace Game
             
             //判定線オブジェクトのAudioSource取得
             GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
-            
-            //判定表示UI Textの初期化
-            GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
-            
-            //左側の数字出すとこのオブジェクト取得
-            GameParameters.ScoreTextView = GameObject.Find("scoreValue");
-            GameParameters.PerfectTextView = GameObject.Find("perfectValue");
-            GameParameters.GreatTextView = GameObject.Find("greatValue");
-            GameParameters.GoodTextView = GameObject.Find("goodValue");
-            GameParameters.MissTextView = GameObject.Find("missValue");
+
+            // オブジェクトの取得
+            FindViews();
+
+            // パラメータをViewで表示
+            SetParametersToView();
             
             //刻み数計算
             GameParameters.Interval = 600000000 / GameParameters.Bpm;
@@ -247,6 +239,41 @@ namespace Game
             
             //リストの最低必要個数を計算
             GameParameters.MinListCount = GameParameters.NotesList.Count;
+        }
+
+        private static void FindViews()
+        {
+            //判定表示UI Textの初期化
+            GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
+            
+            //左側の数字出すとこのオブジェクト取得
+            GameParameters.ScoreTextView = GameObject.Find("scoreValue");
+            GameParameters.PerfectTextView = GameObject.Find("perfectValue");
+            GameParameters.GreatTextView = GameObject.Find("greatValue");
+            GameParameters.GoodTextView = GameObject.Find("goodValue");
+            GameParameters.MissTextView = GameObject.Find("missValue");
+        }
+
+        private static void SetParametersToView()
+        {
+            GameObject.Find("ComposerValue").GetComponent<Text>().text =
+                "Origin";
+            
+            GameObject.Find("BPMValue").GetComponent<Text>().text = 
+                UtilFunctions.PutComma(GameParameters.Bpm);
+            
+            GameObject.Find("MultipleValue").GetComponent<Text>().text =
+                GameParameters.Max + " : " + GameParameters.Min;
+            
+            GameObject.Find("PhraseValue").GetComponent<Text>().text = 
+                UtilFunctions.PutComma(GameParameters.Num);
+            
+            GameObject.Find("RefreshRateValue").GetComponent<Text>().text =
+                UtilFunctions.PutComma(GameParameters.Repeat);
+            
+            GameObject.Find("NoteLengthValue").GetComponent<Text>().text = 
+                "Quarter";
+
         }
         
     }

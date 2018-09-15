@@ -2,8 +2,8 @@
 using System.Diagnostics;
 using System.Linq;
 using System;
-using Constants;
 using UnityEngine;
+using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using Lf = Game.LiveNotesFunctions;
 
@@ -12,7 +12,7 @@ namespace Game
     public class NotesManager : MonoBehaviour
     {
 
-        public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder;
+        public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder, fpsView;
 
         // Use this for initialization
         public void Start()
@@ -21,10 +21,10 @@ namespace Game
             // パラメータ代入 TODO:デバッグ用
             GameParameters.Bpm = 360;
             GameParameters.Max = 1;
-            GameParameters.Min = 0;
+            GameParameters.Min = 1;
             GameParameters.Num = 8;
             GameParameters.Repeat = 4;
-            GameParameters.Speed = 4;
+            GameParameters.Speed = 5;
             GameParameters.NoteLength = 4;
             
             //初期化関数を回す
@@ -39,6 +39,8 @@ namespace Game
         public void Update()
         {
             Lf.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
+
+            fpsView.GetComponent<Text>().text = UtilFunctions.ShowFps();
         }
 
     }

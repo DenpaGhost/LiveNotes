@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using UnityEngine;
 using Lf = Game.LiveNotesFunctions;
-using Constants;
 
 namespace Game
 {
