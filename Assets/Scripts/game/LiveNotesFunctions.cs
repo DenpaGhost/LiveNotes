@@ -252,6 +252,7 @@ namespace Game
             GameParameters.GreatTextView = GameObject.Find("greatValue");
             GameParameters.GoodTextView = GameObject.Find("goodValue");
             GameParameters.MissTextView = GameObject.Find("missValue");
+            GameParameters.SpeedTextView = GameObject.Find("speedValue");
         }
 
         private static void SetParametersToView()
@@ -274,6 +275,14 @@ namespace Game
             GameObject.Find("NoteLengthValue").GetComponent<Text>().text = 
                 "Quarter";
 
+            RefreshSpeedView();
+
+        }
+
+        public static void RefreshSpeedView()
+        {
+            GameParameters.SpeedTextView.GetComponent<Text>().text =
+                GameParameters.Speed.ToString();
         }
         
     }

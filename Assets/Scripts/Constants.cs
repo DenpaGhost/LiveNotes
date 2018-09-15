@@ -20,6 +20,8 @@ public static class GameConstants
     public const ulong SCORE_PERFECT = 6;
     public const ulong SCORE_GREAT = 3;
     public const ulong SCORE_GOOD = 1;
+
+    public const byte SPEED_MAX = 10, SPEED_MIN = 1;
         
     public enum Judge
     {

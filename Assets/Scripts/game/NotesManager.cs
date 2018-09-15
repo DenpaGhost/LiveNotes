@@ -15,7 +15,7 @@ namespace Game
         public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder, fpsView;
 
         // Use this for initialization
-        public void Start()
+        private void Start()
         {
             
             // パラメータ代入 TODO:デバッグ用
@@ -36,7 +36,7 @@ namespace Game
         }
 
         // Update is called once per frame
-        public void Update()
+        private void Update()
         {
             Lf.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
 

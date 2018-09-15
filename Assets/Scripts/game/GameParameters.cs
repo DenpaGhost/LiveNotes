@@ -9,6 +9,7 @@ namespace Game
     {
         private static int _minListCount = 32;
         private static List<GameObject>[] _laneQueueList = new List<GameObject>[7];
+        private static byte _speed = 1;
 
         public static long Interval { get; set; }
 
@@ -21,8 +22,29 @@ namespace Game
         public static byte Max { get; set; }
 
         public static byte Min { get; set; }
-        
-        public static byte Speed { get; set; }
+
+        public static byte Speed
+        {
+            get
+            {
+                return _speed;
+            }
+            set
+            {
+                if (value > GameConstants.SPEED_MAX)
+                {
+                    _speed = GameConstants.SPEED_MAX;
+                }
+                else if (value < GameConstants.SPEED_MIN)
+                {
+                    _speed = GameConstants.SPEED_MIN;
+                }
+                else
+                {
+                    _speed = value;
+                }
+            }
+        }
 
         public static byte NoteLength { get; set; }
 
@@ -47,6 +69,12 @@ namespace Game
         public static GameObject GreatTextView { get; set; }
         public static GameObject GoodTextView { get; set; }
         public static GameObject MissTextView { get; set; }
+
+        public static GameObject SpeedTextView
+        {
+            get;
+            set;
+        }
 
         public static ulong Perfect { get; set; }
         public static ulong Great { get; set; }
