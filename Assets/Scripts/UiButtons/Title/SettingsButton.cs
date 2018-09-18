@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UiButtons.Title
 {
-    public class SettingsButton : BaseUiButton
+    public class SettingsButton : BaseTitleButton
     {
         public override void Select()
         {

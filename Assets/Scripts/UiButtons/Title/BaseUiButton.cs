@@ -32,17 +32,7 @@ namespace UiButtons.Title
             ClickEvent();
         }
 
-        public virtual void Select()
-        {
-            AudioSource.Stop();
-            AudioSource.PlayOneShot(AudioSource.clip);
-            
-            CanvasAnimator.ResetTrigger(UiConstants.QUICK_HIGHLIGHT_TRIGGER);
-            CanvasAnimator.ResetTrigger(UiConstants.ARTIST_HIGHLIGHT_TRIGGER);
-            CanvasAnimator.ResetTrigger(UiConstants.SETTING_HIGHLIGHT_TRIGGER);
-            CanvasAnimator.ResetTrigger(UiConstants.EXIT_HIGHLIGHT_TRIGGER);
-
-        }
+        public abstract void Select();
 
         public abstract void ClickEvent();
     }

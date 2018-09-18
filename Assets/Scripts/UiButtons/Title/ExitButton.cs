@@ -2,7 +2,7 @@ using UnityEngine.EventSystems;
 
 namespace UiButtons.Title
 {
-    public class ExitButton : BaseUiButton
+    public class ExitButton : BaseTitleButton
     {
         public override void Select()
         {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UiButtons.Title
 {
-    public class QuickButton : BaseUiButton
+    public class QuickButton : BaseTitleButton
     {
         public override void Select()
         {

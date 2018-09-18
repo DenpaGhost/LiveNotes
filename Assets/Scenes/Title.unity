@@ -544,7 +544,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5e67d5dd7bac7644994efac6f57c85d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beebd07d33465ef42b7dafdf12fc7184, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6023,7 +6023,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5e67d5dd7bac7644994efac6f57c85d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beebd07d33465ef42b7dafdf12fc7184, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7094,6 +7094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859c4e8f18d303548b068031f0fc0f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  QuickButton: {fileID: 1317360027}
+  DialogNegativeButton: {fileID: 76377661}
+  ExitDialogImage: {fileID: 1204957682}
+  CanvasAnimator: {fileID: 2097387471}
 --- !u!1 &1317360027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7197,7 +7201,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5e67d5dd7bac7644994efac6f57c85d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beebd07d33465ef42b7dafdf12fc7184, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8476,7 +8480,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5e67d5dd7bac7644994efac6f57c85d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beebd07d33465ef42b7dafdf12fc7184, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

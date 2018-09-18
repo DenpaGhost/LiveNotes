@@ -9,7 +9,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Constants.cs" t="Include" />
-          <e p="dialogButtons.cs" t="Include" />
           <e p="game" t="Include">
             <e p="Border.cs" t="Include" />
             <e p="GameKeyManager.cs" t="Include" />
@@ -23,6 +22,7 @@
           <e p="UiButtons" t="Include">
             <e p="Title" t="Include">
               <e p="ArtistButton.cs" t="Include" />
+              <e p="BaseTitleButton.cs" t="Include" />
               <e p="BaseUiButton.cs" t="Include" />
               <e p="ExitButton.cs" t="Include" />
               <e p="ExitDialog" t="Include">
@@ -33,10 +33,9 @@
               </e>
               <e p="QuickButton.cs" t="Include" />
               <e p="SettingsButton.cs" t="Include" />
+              <e p="uiKeyInputs.cs" t="Include" />
             </e>
           </e>
-          <e p="uiButtons.cs" t="Include" />
-          <e p="uiKeyInputs.cs" t="Include" />
           <e p="UtilFunctions.cs" t="Include" />
         </e>
       </e>
