@@ -20,6 +20,15 @@
             <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
           </e>
+          <e p="UiButtons" t="Include">
+            <e p="Title" t="Include">
+              <e p="ArtistButton.cs" t="Include" />
+              <e p="BaseUiButton.cs" t="Include" />
+              <e p="ExitButton.cs" t="Include" />
+              <e p="QuickButton.cs" t="Include" />
+              <e p="SettingsButton.cs" t="Include" />
+            </e>
+          </e>
           <e p="uiButtons.cs" t="Include" />
           <e p="uiKeyInputs.cs" t="Include" />
           <e p="UtilFunctions.cs" t="Include" />

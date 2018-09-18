@@ -399,7 +399,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9,999
+  m_Text: '0
+
+'
 --- !u!222 &162704335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1162,7 +1164,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: '99
+
+'
 --- !u!222 &339127319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1819,7 +1823,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 999,999,999
+  m_Text: '0
+
+'
 --- !u!222 &796883071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1894,9 +1900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '9,999
-
-'
+  m_Text: 0
 --- !u!222 &828594136
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2196,7 +2200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '9,999
+  m_Text: '0
 
 '
 --- !u!222 &998096077
@@ -3221,7 +3225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '9,999
+  m_Text: '0
 
 '
 --- !u!222 &1355440007
@@ -3459,7 +3463,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128

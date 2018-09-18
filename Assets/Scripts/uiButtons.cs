@@ -26,7 +26,7 @@ public class uiButtons : MonoBehaviour {
     }
 
     //ボタンが選択状態になったとき、アニメーションを再生する
-    public void ButtonHighlited()
+    public void ButtonHighlight()
     {
         audioSource.GetComponent<AudioSource>().Stop();
         audioSource.GetComponent<AudioSource>().PlayOneShot(audioSource.GetComponent<AudioSource>().clip);

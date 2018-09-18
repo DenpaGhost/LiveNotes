@@ -30,6 +30,7 @@ public static class GameConstants
         Good,
         Miss
     }
+    
 }
 
 public static class ConstantsColors
@@ -39,4 +40,14 @@ public static class ConstantsColors
     public static readonly Color KEY_COLOR_WHITE_PUSH = new Color32(239,154,154 ,255);//#ef9a9a
     public static readonly Color KEY_COLOR_BLACK_PUSH = new Color32(239,83,80 ,255);//#ef5350
         
+}
+
+public static class UiConstants
+{
+    public const string QUICK_HIGHLIGHT_TRIGGER = "quickHighlight";
+    public const string ARTIST_HIGHLIGHT_TRIGGER = "artistHighlight";
+    public const string SETTING_HIGHLIGHT_TRIGGER = "settingsHighlight";
+    public const string EXIT_HIGHLIGHT_TRIGGER = "exitHighlight";
+    public const string SUBMIT_TRIGGER = "Submit";
+    public const string EXIT_DIALOG_SHOW_TRIGGER = "exitDialogShow";
 }
