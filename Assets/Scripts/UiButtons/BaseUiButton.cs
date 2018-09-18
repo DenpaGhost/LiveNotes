@@ -5,7 +5,6 @@ namespace UiButtons.Title
 {
     public abstract class BaseUiButton : MonoBehaviour
     {
-        public Animator CanvasAnimator;
         public AudioSource AudioSource;
         public GameObject Circle;
         

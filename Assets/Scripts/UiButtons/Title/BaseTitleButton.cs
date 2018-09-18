@@ -1,7 +1,11 @@
+using UnityEngine;
+
 namespace UiButtons.Title
 {
     public abstract class BaseTitleButton : BaseUiButton
     {
+        public Animator CanvasAnimator;
+        
         public override void Select()
         {
             AudioSource.Stop();

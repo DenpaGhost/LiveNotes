@@ -20,14 +20,18 @@
             <e p="NotesManager.cs" t="Include" />
           </e>
           <e p="UiButtons" t="Include">
+            <e p="BaseUiButton.cs" t="Include" />
+            <e p="Settings" t="Include">
+              <e p="BaseSettingsButton.cs" t="Include" />
+              <e p="OutputButton.cs" t="Include" />
+              <e p="PreferenceButton.cs" t="Include" />
+            </e>
             <e p="Title" t="Include">
               <e p="ArtistButton.cs" t="Include" />
               <e p="BaseTitleButton.cs" t="Include" />
-              <e p="BaseUiButton.cs" t="Include" />
               <e p="ExitButton.cs" t="Include" />
               <e p="ExitDialog" t="Include">
                 <e p="BaseDialogButton.cs" t="Include" />
-                <e p="ExitDialogFunctions.cs" t="Include" />
                 <e p="NegativeButton.cs" t="Include" />
                 <e p="PositiveButton.cs" t="Include" />
               </e>
