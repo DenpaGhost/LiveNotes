@@ -1,4 +1,3 @@
-using System.Security.Cryptography;
 using UnityEngine;
 
 public static class GameConstants
@@ -50,11 +49,11 @@ public static class UiConstants
     public const string EXIT_HIGHLIGHT_TRIGGER = "exitHighlight";
     public const string SUBMIT_TRIGGER = "Submit";
     public const string EXIT_DIALOG_SHOW_TRIGGER = "exitDialogShow";
+    public const string DIALOG_IDLE_TRIGGER = "idle";
 }
 
 public static class DialogTriggerConstants
 {
     public const string SELECTED = "Selected";
-    public const string SUBMIT = "Submit";
     public const string NORMAL = "Normal";
 }
