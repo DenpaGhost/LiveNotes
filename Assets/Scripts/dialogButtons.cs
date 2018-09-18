@@ -46,7 +46,7 @@ public class dialogButtons : MonoBehaviour {
 
     public void Normal()
     {
-        gameObject.GetComponent<Animator>().SetTrigger("Normal");
+        gameObject.GetComponent<Animator>().SetTrigger("Deselected");
     }
 
     public void OnClick()

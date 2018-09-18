@@ -25,6 +25,12 @@
               <e p="ArtistButton.cs" t="Include" />
               <e p="BaseUiButton.cs" t="Include" />
               <e p="ExitButton.cs" t="Include" />
+              <e p="ExitDialog" t="Include">
+                <e p="BaseDialogButton.cs" t="Include" />
+                <e p="ExitDialogFunctions.cs" t="Include" />
+                <e p="NegativeButton.cs" t="Include" />
+                <e p="PositiveButton.cs" t="Include" />
+              </e>
               <e p="QuickButton.cs" t="Include" />
               <e p="SettingsButton.cs" t="Include" />
             </e>

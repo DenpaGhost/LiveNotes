@@ -51,3 +51,10 @@ public static class UiConstants
     public const string SUBMIT_TRIGGER = "Submit";
     public const string EXIT_DIALOG_SHOW_TRIGGER = "exitDialogShow";
 }
+
+public static class DialogTriggerConstants
+{
+    public const string SELECTED = "Selected";
+    public const string SUBMIT = "Submit";
+    public const string NORMAL = "Normal";
+}

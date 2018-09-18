@@ -124,10 +124,10 @@ GameObject:
   - component: {fileID: 76377665}
   - component: {fileID: 76377664}
   - component: {fileID: 76377663}
-  - component: {fileID: 76377667}
   - component: {fileID: 76377666}
   - component: {fileID: 76377668}
   - component: {fileID: 76377669}
+  - component: {fileID: 76377667}
   m_Layer: 5
   m_Name: negativeButton
   m_TagString: Untagged
@@ -256,9 +256,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 76377661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a17f94c7543434d85f4cf0f9350ff6, type: 3}
+  m_Script: {fileID: 11500000, guid: ca8c7f9da68f46b7b084f38e9a13eb20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasAnimator: {fileID: 2097387471}
+  AudioSource: {fileID: 835181437}
+  Circle: {fileID: 462316182}
 --- !u!114 &76377668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +279,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 76377667}
-          m_MethodName: MouseEnter
+          m_MethodName: PointerEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -293,7 +296,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 76377667}
-          m_MethodName: ButtonClick
+          m_MethodName: PointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -310,7 +313,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 76377667}
-          m_MethodName: ButtonPressed
+          m_MethodName: Submit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -327,7 +330,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 76377667}
-          m_MethodName: Selected
+          m_MethodName: Select
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -344,7 +347,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 76377667}
-          m_MethodName: Normal
+          m_MethodName: Deselected
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5530,10 +5533,10 @@ GameObject:
   - component: {fileID: 566906039}
   - component: {fileID: 566906038}
   - component: {fileID: 566906037}
-  - component: {fileID: 566906043}
   - component: {fileID: 566906042}
   - component: {fileID: 566906041}
   - component: {fileID: 566906040}
+  - component: {fileID: 566906043}
   m_Layer: 5
   m_Name: positiveButton
   m_TagString: Untagged
@@ -5671,7 +5674,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566906043}
-          m_MethodName: MouseEnter
+          m_MethodName: PointerEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5688,7 +5691,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566906043}
-          m_MethodName: ButtonClick
+          m_MethodName: PointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5705,7 +5708,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566906043}
-          m_MethodName: ButtonPressed
+          m_MethodName: Submit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5722,7 +5725,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566906043}
-          m_MethodName: Selected
+          m_MethodName: Select
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5739,7 +5742,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566906043}
-          m_MethodName: Normal
+          m_MethodName: Deselected
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5771,9 +5774,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 566906035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a17f94c7543434d85f4cf0f9350ff6, type: 3}
+  m_Script: {fileID: 11500000, guid: 766e1d88c4cf4b33a3f6e2f7aea8c11e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasAnimator: {fileID: 2097387471}
+  AudioSource: {fileID: 835181437}
+  Circle: {fileID: 1006714394}
 --- !u!1 &637388962
 GameObject:
   m_ObjectHideFlags: 0
