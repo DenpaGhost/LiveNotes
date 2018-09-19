@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56ccc57d-0557-4617-8e4b-f3b9de3b6f54" name="Default" comment="[Refactor]抽象クラスをもっともっと抽象化">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/TitleButtons/quickButton.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/TitleButtons/quickButton.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/TitleDialogs/positiveButton.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/TitleDialogs/positiveButton.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseUiButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseUiButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/ExitDialogFunctions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/ExitDialogFunctions.cs.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="56ccc57d-0557-4617-8e4b-f3b9de3b6f54" name="Default" comment="[add]設定画面の抽象クラスとボタン" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +26,7 @@
     <session id="-1707557330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="4" />
@@ -55,13 +37,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cs" value="15491" />
-          <entry key="txt" value="435" />
+          <entry key="txt" value="460" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C#" value="15491" />
-          <entry key="PLAIN_TEXT" value="435" />
+          <entry key="PLAIN_TEXT" value="460" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -454,7 +436,7 @@
       <workItem from="1536987445571" duration="7627000" />
       <workItem from="1537073992088" duration="234000" />
       <workItem from="1537078680728" duration="1797000" />
-      <workItem from="1537258270374" duration="13335000" />
+      <workItem from="1537258270374" duration="13385000" />
     </task>
     <task id="LOCAL-00001" summary="何となく">
       <created>1534074855854</created>
@@ -645,11 +627,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537274370595</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="[add]設定画面の抽象クラスとボタン">
+      <created>1537276069397</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1537276069397</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148041000" />
+    <option name="totallyTimeSpent" value="148091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,7 +651,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -753,7 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="何となく" />
     <MESSAGE value="ゲームスタート時の一番最初の描画成功" />
     <MESSAGE value="[fix]カウンターがぶっ壊れてたのを修正" />
     <MESSAGE value="[fix]ノーツがちゃんと描画されたぞおおおおおおおおお！！！！！" />
@@ -778,7 +765,8 @@
     <MESSAGE value="[Refactor]ディレクトリ構成変更" />
     <MESSAGE value="[Refactor]UIをキー操作できるようにするスクリプトのリファクタ" />
     <MESSAGE value="[Refactor]抽象クラスをもっともっと抽象化" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]抽象クラスをもっともっと抽象化" />
+    <MESSAGE value="[add]設定画面の抽象クラスとボタン" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]設定画面の抽象クラスとボタン" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
