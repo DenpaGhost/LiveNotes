@@ -1,10 +1,12 @@
+using UnityEngine;
+
 namespace UiButtons.Title.Settings
 {
     public class PreferenceButton : BaseSettingsButton
     {
         public override void ClickEvent()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("プリファレンス設定へ");
         }
     }
 }

@@ -1,14 +1,12 @@
-
-
 using UnityEngine;
 
 namespace UiButtons.Title.Settings
 {
-    public class OutputButton : BaseSettingsButton
+    public class OverviewButton : BaseSettingsButton
     {
         public override void ClickEvent()
         {
-            Debug.Log("出力設定へつなぐ");
+            Debug.Log("概要へつなぐ");
         }
     }
 }
