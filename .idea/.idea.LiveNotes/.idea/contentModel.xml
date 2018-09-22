@@ -25,6 +25,7 @@
             <e p="OutputButton.cs" t="Include" />
             <e p="OverviewButton.cs" t="Include" />
             <e p="PreferenceButton.cs" t="Include" />
+            <e p="SettingManager.cs" t="Include" />
           </e>
           <e p="Title" t="Include">
             <e p="ArtistButton.cs" t="Include" />

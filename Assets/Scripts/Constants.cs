@@ -34,10 +34,12 @@ public static class GameConstants
 
 public static class ConstantsColors
 {
-    public static readonly Color KEY_COLOR_WHITE = new Color32(250,250,250 ,255);//#FAFAFA
-    public static readonly Color KEY_COLOR_BLACK = new Color32(33,33,33 ,255);//#212121
+    public static readonly Color KEY_COLOR_WHITE = new Color32(250,250,250,255);//#FAFAFA
+    public static readonly Color KEY_COLOR_BLACK = new Color32(33,33,33,255);//#212121
     public static readonly Color KEY_COLOR_WHITE_PUSH = new Color32(239,154,154 ,255);//#ef9a9a
-    public static readonly Color KEY_COLOR_BLACK_PUSH = new Color32(239,83,80 ,255);//#ef5350
+    public static readonly Color KEY_COLOR_BLACK_PUSH = new Color32(239,83,80,255);//#ef5350
+    public static readonly Color SETTINGS_BUTTON_NORMAL = new Color32(245,245,245,255);
+    public static readonly Color SETTINGS_BUTTON_HIGHLIGHT = new Color32(224,224,224 ,255);
         
 }
 
