@@ -2,13 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ccc57d-0557-4617-8e4b-f3b9de3b6f54" name="Default" comment="[add]設定画面の抽象クラスとボタン">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveNotes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Settings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Settings.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseUiButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseUiButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/BaseSettingsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/BaseSettingsButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/OutputButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/OutputButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/OverviewButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/OverviewButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/PreferenceButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/PreferenceButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ArtistButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ArtistButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ArtistButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ArtistButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/BaseTitleButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/BaseTitleButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/BaseDialogButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/BaseDialogButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/NegativeButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/NegativeButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/NegativeButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/NegativeButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/PositiveButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/PositiveButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/PositiveButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/PositiveButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/QuickButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/QuickButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/QuickButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/QuickButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/SettingsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/SettingsButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/SettingsButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/UiKeyInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/UiKeyInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/UiKeyInputs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Title/UiKeyInputs.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +62,13 @@
     <session id="-1707557330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="8" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,20 +85,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="66" />
+          <entry key="cs" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="66" />
+          <entry key="C#" value="70" />
         </counts>
       </usages-collector>
     </session>
     <session id="152000415">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -97,66 +132,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OutputButton.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-              <folding>
-                <marker date="1537275906000" expanded="true" signature="54:521" ph="{...}" />
-                <marker date="1537275906000" expanded="true" signature="116:519" ph="{...}" />
-                <marker date="1537275906000" expanded="true" signature="160:360" ph="{...}" />
-                <marker date="1537275906000" expanded="true" signature="402:513" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding>
-                <marker date="1537332653942" expanded="true" signature="56:220" ph="{...}" />
-                <marker date="1537332653942" expanded="true" signature="109:218" ph="{...}" />
-                <marker date="1537332653942" expanded="true" signature="157:212" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding>
-                <marker date="1537332653860" expanded="true" signature="54:218" ph="{...}" />
-                <marker date="1537332653860" expanded="true" signature="109:216" ph="{...}" />
-                <marker date="1537332653860" expanded="true" signature="157:210" ph="{...}" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OverviewButton.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state>
               <folding>
-                <marker date="1537332653911" expanded="true" signature="54:224" ph="{...}" />
-                <marker date="1537332653911" expanded="true" signature="111:222" ph="{...}" />
-                <marker date="1537332653911" expanded="true" signature="159:216" ph="{...}" />
+                <marker date="1537332653000" expanded="true" signature="54:218" ph="{...}" />
+                <marker date="1537332653000" expanded="true" signature="109:216" ph="{...}" />
+                <marker date="1537332653000" expanded="true" signature="157:210" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/PreferenceButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding>
+                <marker date="1537332653000" expanded="true" signature="54:224" ph="{...}" />
+                <marker date="1537332653000" expanded="true" signature="111:222" ph="{...}" />
+                <marker date="1537332653000" expanded="true" signature="159:216" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -192,30 +197,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/SettingsButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/QuickButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/UiKeyInputs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseUiButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/QuickButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/PreferenceButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/ArtistButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/UiKeyInputs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OutputButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/GameKeyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/SettingsButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/GameParameters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Border.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Note.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/BaseSettingsButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/NegativeButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/PositiveButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/BaseTitleButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/BaseDialogButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/JudgeTextManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OverviewButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UtilFunctions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/JudgeTextManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ArtistButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Border.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/NegativeButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/Note.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/PositiveButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/NotesManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/LiveNotesFunctions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/GameKeyManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/game/GameParameters.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -269,9 +274,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-83" />
-    <option name="y" value="502" />
-    <option name="width" value="1938" />
+    <option name="x" value="-91" />
+    <option name="y" value="497" />
+    <option name="width" value="1939" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
@@ -279,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -295,27 +301,7 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="game" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="UiButtons" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="UiButtons" type="1045f7f1:UnityExplorerNode" />
               <item name="Settings" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="UiButtons" type="1045f7f1:UnityExplorerNode" />
-              <item name="Title" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -326,7 +312,6 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -350,7 +335,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -426,7 +411,14 @@
       <workItem from="1537073992088" duration="234000" />
       <workItem from="1537078680728" duration="1797000" />
       <workItem from="1537258270374" duration="13385000" />
-      <workItem from="1537332507070" duration="572000" />
+      <workItem from="1537332507070" duration="1245000" />
+      <workItem from="1537519345299" duration="101000" />
+      <workItem from="1537519568654" duration="134000" />
+      <workItem from="1537520799276" duration="250000" />
+      <workItem from="1537521150834" duration="140000" />
+      <workItem from="1537521657389" duration="528000" />
+      <workItem from="1537602595777" duration="1354000" />
+      <workItem from="1537611580826" duration="2412000" />
     </task>
     <task id="LOCAL-00001" summary="何となく">
       <created>1534074855854</created>
@@ -628,7 +620,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148663000" />
+    <option name="totallyTimeSpent" value="154255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,10 +632,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1577" height="1016" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1961817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -659,9 +651,9 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3286334" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3280543" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286334" />
-      <window_info anchor="bottom" id="Build" order="15" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32918552" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -670,7 +662,7 @@
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.198815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -845,49 +837,49 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/uiButtons.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/DialogButtonBase.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/dialogButtons.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/PositiveButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/PositiveButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/NegativeButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/NegativeButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/UiKeyInputs.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/UiKeyInputs.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ArtistButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/ArtistButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/QuickButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/QuickButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/SettingsButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/SettingsButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
@@ -895,21 +887,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/ExitDialogFunctions.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/BaseUiButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/ExitDialog/BaseDialogButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/ExitDialog/BaseDialogButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Title/BaseTitleButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Title/BaseTitleButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
@@ -923,51 +908,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/BaseSettingsButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseUiButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <marker date="1537275721851" expanded="false" signature="6:50" ph="..." />
+            <marker date="1537275721851" expanded="true" signature="77:1033" ph="{...}" />
+            <marker date="1537275721851" expanded="true" signature="134:1031" ph="{...}" />
+            <marker date="1537275721851" expanded="true" signature="258:345" ph="{...}" />
+            <marker date="1537275721851" expanded="true" signature="432:642" ph="{...}" />
+            <marker date="1537275721851" expanded="true" signature="733:941" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/BaseSettingsButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
           <folding>
-            <marker date="1537275906000" expanded="true" signature="54:521" ph="{...}" />
-            <marker date="1537275906000" expanded="true" signature="116:519" ph="{...}" />
-            <marker date="1537275906000" expanded="true" signature="160:360" ph="{...}" />
-            <marker date="1537275906000" expanded="true" signature="402:513" ph="{...}" />
+            <marker date="1537275906086" expanded="true" signature="54:521" ph="{...}" />
+            <marker date="1537275906086" expanded="true" signature="116:519" ph="{...}" />
+            <marker date="1537275906086" expanded="true" signature="160:360" ph="{...}" />
+            <marker date="1537275906086" expanded="true" signature="402:513" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OutputButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OutputButton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/PreferenceButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <marker date="1537332653942" expanded="true" signature="56:220" ph="{...}" />
-            <marker date="1537332653942" expanded="true" signature="109:218" ph="{...}" />
-            <marker date="1537332653942" expanded="true" signature="157:212" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="54:224" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="111:222" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="159:216" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/OverviewButton.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/OverviewButton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state>
           <folding>
-            <marker date="1537332653860" expanded="true" signature="54:218" ph="{...}" />
-            <marker date="1537332653860" expanded="true" signature="109:216" ph="{...}" />
-            <marker date="1537332653860" expanded="true" signature="157:210" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UiButtons/Settings/PreferenceButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1537332653911" expanded="true" signature="54:224" ph="{...}" />
-            <marker date="1537332653911" expanded="true" signature="111:222" ph="{...}" />
-            <marker date="1537332653911" expanded="true" signature="159:216" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="54:218" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="109:216" ph="{...}" />
+            <marker date="1537332653000" expanded="true" signature="157:210" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\denpa\.Rider2018.2\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\denpa\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\denpa\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_LiveNotes.-195830607.00" t="ExcludeRecursive" />
-    <e p="C:\Users\denpa\OneDrive\UnityProject\LiveNotes" t="IncludeRecursive">
+    <e p="C:\Users\denpa\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_LiveNotes.-663530015.00" t="ExcludeRecursive" />
+    <e p="E:\OneDrive\UnityProject\LiveNotes" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BaseUiButton.cs" t="Include" />
           <e p="Constants.cs" t="Include" />
           <e p="game" t="Include">
             <e p="Border.cs" t="Include" />
@@ -18,27 +20,24 @@
             <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
           </e>
-          <e p="UiButtons" t="Include">
-            <e p="BaseUiButton.cs" t="Include" />
-            <e p="Settings" t="Include">
-              <e p="BaseSettingsButton.cs" t="Include" />
-              <e p="OutputButton.cs" t="Include" />
-              <e p="OverviewButton.cs" t="Include" />
-              <e p="PreferenceButton.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="BaseSettingsButton.cs" t="Include" />
+            <e p="OutputButton.cs" t="Include" />
+            <e p="OverviewButton.cs" t="Include" />
+            <e p="PreferenceButton.cs" t="Include" />
+          </e>
+          <e p="Title" t="Include">
+            <e p="ArtistButton.cs" t="Include" />
+            <e p="BaseTitleButton.cs" t="Include" />
+            <e p="ExitButton.cs" t="Include" />
+            <e p="ExitDialog" t="Include">
+              <e p="BaseDialogButton.cs" t="Include" />
+              <e p="NegativeButton.cs" t="Include" />
+              <e p="PositiveButton.cs" t="Include" />
             </e>
-            <e p="Title" t="Include">
-              <e p="ArtistButton.cs" t="Include" />
-              <e p="BaseTitleButton.cs" t="Include" />
-              <e p="ExitButton.cs" t="Include" />
-              <e p="ExitDialog" t="Include">
-                <e p="BaseDialogButton.cs" t="Include" />
-                <e p="NegativeButton.cs" t="Include" />
-                <e p="PositiveButton.cs" t="Include" />
-              </e>
-              <e p="QuickButton.cs" t="Include" />
-              <e p="SettingsButton.cs" t="Include" />
-              <e p="uiKeyInputs.cs" t="Include" />
-            </e>
+            <e p="QuickButton.cs" t="Include" />
+            <e p="SettingsButton.cs" t="Include" />
+            <e p="uiKeyInputs.cs" t="Include" />
           </e>
           <e p="UtilFunctions.cs" t="Include" />
         </e>
