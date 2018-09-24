@@ -93,7 +93,7 @@ namespace Game
         //ノーツ生成時の初期位置を計算する関数
         public static float CalcSpawnPosition(long nowTime, long targetTime)
         {
-            var y = (targetTime - nowTime) / 100000 * GameParameters.Speed;
+            var y = (targetTime - nowTime) / 100000f * GameParameters.Speed;
 
             return y;
         }

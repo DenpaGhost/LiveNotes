@@ -9,7 +9,7 @@ namespace Game
     {
         private static int _minListCount = 32;
         private static List<GameObject>[] _laneQueueList = new List<GameObject>[7];
-        private static byte _speed = 1;
+        private static float _speed = 1;
 
         public static long Interval { get; set; }
 
@@ -23,7 +23,7 @@ namespace Game
 
         public static byte Min { get; set; }
 
-        public static byte Speed
+        public static float Speed
         {
             get
             {
