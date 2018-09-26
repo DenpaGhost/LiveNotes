@@ -25,15 +25,15 @@ namespace game
 
         private void ChangeSpeed()
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetButtonDown("Vertical"))
             {
-                if (Input.GetAxisRaw("Horizontal") > 0 && _canChangeSpeed)
+                if (Input.GetAxisRaw("Vertical") > 0 && _canChangeSpeed)
                 {
                     GameParameters.Speed += 1;
                     _canChangeSpeed = false;
                     Lf.RefreshSpeedView();
                 }
-                else if (Input.GetAxisRaw("Horizontal") < 0 && _canChangeSpeed)
+                else if (Input.GetAxisRaw("Vertical") < 0 && _canChangeSpeed)
                 {
                     GameParameters.Speed -= 1;
                     _canChangeSpeed = false;
