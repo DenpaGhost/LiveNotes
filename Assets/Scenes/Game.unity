@@ -3092,7 +3092,7 @@ GameObject:
   - component: {fileID: 596608712}
   - component: {fileID: 596608711}
   m_Layer: 5
-  m_Name: Text
+  m_Name: nowValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5577,7 +5577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77, y: 263.7}
+  m_AnchoredPosition: {x: 214.99992, y: 395}
   m_SizeDelta: {x: 350, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249038484
@@ -6093,6 +6093,7 @@ GameObject:
   - component: {fileID: 1485678064}
   - component: {fileID: 1485678063}
   - component: {fileID: 1485678062}
+  - component: {fileID: 1485678065}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -6157,7 +6158,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1485678063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1485678065}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1485678063
@@ -6194,6 +6206,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1485678060}
   m_CullTransparentMesh: 0
+--- !u!114 &1485678065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485678060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0899c86e5daf048bcb0e66af598c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slider: {fileID: 1249038482}
+  SettingsCard: {fileID: 0}
 --- !u!1 &1490266782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,7 +6748,7 @@ GameObject:
   - component: {fileID: 1551725198}
   - component: {fileID: 1551725197}
   m_Layer: 5
-  m_Name: Image
+  m_Name: NowValueBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
