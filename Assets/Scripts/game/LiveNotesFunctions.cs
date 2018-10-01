@@ -258,7 +258,7 @@ namespace Game
         private static void SetParametersToView()
         {
             GameObject.Find("ComposerValue").GetComponent<Text>().text =
-                "Origin";
+                "Debug";
             
             GameObject.Find("BPMValue").GetComponent<Text>().text = 
                 UtilFunctions.PutComma(GameParameters.Bpm);
@@ -273,7 +273,7 @@ namespace Game
                 UtilFunctions.PutComma(GameParameters.Repeat);
             
             GameObject.Find("NoteLengthValue").GetComponent<Text>().text = 
-                "Quarter";
+                "4";
 
             RefreshSpeedView();
 
