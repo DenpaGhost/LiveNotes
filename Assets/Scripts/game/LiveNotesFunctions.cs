@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -10,11 +11,11 @@ namespace Game
     public class LiveNotesFunctions : MonoBehaviour
     {
         //フレーズを作る関数
-        public static int[] Generate(ushort num, byte max, byte min)
+        public static int[] Generate(ushort length, byte max, byte min)
         {
 
             //ノーツデータ用配列初期化
-            var notes = new int[num];
+            var notes = new int[length];
             
             //必要な個数ノーツ生成
             for (var i = 0; i < notes.Length; i++)
@@ -47,7 +48,7 @@ namespace Game
         }
         
         //リストをいっぱいにするための関数
-        public static List<NotesData> PushNotesDataToList(List<NotesData> list)
+        public static List<NotesData> PushNotesDataToList(List<NotesData> list, BaseComposer composer)
         {   
             //targetTimeをずらすためのカウンタ
             var counter = 0;
@@ -74,7 +75,7 @@ namespace Game
             //超えるまで作る
             while (list.Count <= GameParameters.MinListCount)
             {
-                var phrase = Generate(GameParameters.Num, GameParameters.Max, GameParameters.Min);
+                var phrase = composer.GeneratePhrase(GameParameters.Num, GameParameters.Max, GameParameters.Min);
 
                 for (var repeat = 0; repeat < GameParameters.Repeat; repeat++)
                 {
@@ -235,7 +236,7 @@ namespace Game
 
             //Listに詰めこむ
             GameParameters.NotesList = new List<NotesData>();
-            GameParameters.NotesList = PushNotesDataToList(GameParameters.NotesList);
+            GameParameters.NotesList = PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
             
             //リストの最低必要個数を計算
             GameParameters.MinListCount = GameParameters.NotesList.Count;
@@ -283,6 +284,12 @@ namespace Game
         {
             GameParameters.SpeedTextView.GetComponent<Text>().text =
                 GameParameters.Speed.ToString();
+        }
+
+        //EventSystemへ選択されているオブジェクトを指定する
+        public static void SetCurrentSelect(GameObject targetObject)
+        {
+            EventSystem.current.SetSelectedGameObject(targetObject);
         }
         
     }

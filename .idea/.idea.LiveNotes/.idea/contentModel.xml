@@ -12,6 +12,10 @@
           <e p="Constants.cs" t="Include" />
           <e p="game" t="Include">
             <e p="Border.cs" t="Include" />
+            <e p="Composers" t="Include">
+              <e p="BaseComposer.cs" t="Include" />
+              <e p="ComposerPlain.cs" t="Include" />
+            </e>
             <e p="GameKeyManager.cs" t="Include" />
             <e p="gameParameters.cs" t="Include" />
             <e p="JudgeTextManager.cs" t="Include" />
@@ -20,6 +24,7 @@
             <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
             <e p="SettingParametersUI" t="Include">
+              <e p="BpmSetButton.cs" t="Include" />
               <e p="SetParametersUiBaseButton.cs" t="Include" />
               <e p="ValueSlider.cs" t="Include" />
             </e>
