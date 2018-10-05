@@ -21,6 +21,7 @@
             <e p="NotesManager.cs" t="Include" />
             <e p="SettingParametersUI" t="Include">
               <e p="SetParametersUiBaseButton.cs" t="Include" />
+              <e p="ValueSlider.cs" t="Include" />
             </e>
           </e>
           <e p="Settings" t="Include">
