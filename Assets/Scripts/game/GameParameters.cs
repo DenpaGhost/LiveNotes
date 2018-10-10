@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace Game
+namespace game
 {
     public static class GameParameters
     {

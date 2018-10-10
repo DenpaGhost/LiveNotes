@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using UnityEngine;
-using Lf = Game.LiveNotesFunctions;
+using Lf = game.LiveNotesFunctions;
 
-namespace Game
+namespace game
 {
     public class Note : MonoBehaviour
     {
@@ -18,7 +18,7 @@ namespace Game
         private void Update ()
         {
             //描画される位置を計算
-            var position = Lf.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
+            var position = LiveNotesFunctions.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
             //配置
             gameObject.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, GameConstants.JUDGE_LINE_Y + position);
 
@@ -53,25 +53,25 @@ namespace Game
 
                 if (TargetTime + GameConstants.JUDGE_PERFECT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT <= Timer.ElapsedTicks)
                 {
-                    Lf.SetJudgeText("Perfect!!!");
+                    LiveNotesFunctions.SetJudgeText("Perfect!!!");
                     _myJudge = GameConstants.Judge.Perfect;
                     Destroy(gameObject);
                 }
                 else if (TargetTime + GameConstants.JUDGE_GREAT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT <= Timer.ElapsedTicks)
                 {
-                    Lf.SetJudgeText("Great!!");
+                    LiveNotesFunctions.SetJudgeText("Great!!");
                     _myJudge = GameConstants.Judge.Great;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_GOOD >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD <= Timer.ElapsedTicks)
                 {
-                    Lf.SetJudgeText("Good!");
+                    LiveNotesFunctions.SetJudgeText("Good!");
                     _myJudge = GameConstants.Judge.Good;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_MISS >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS <= Timer.ElapsedTicks)
                 {
-                    Lf.SetJudgeText("Miss...");
+                    LiveNotesFunctions.SetJudgeText("Miss...");
                     Destroy(gameObject);
                 }
                 
@@ -101,7 +101,7 @@ namespace Game
 
             GameParameters.NotesCount += 1;
             
-            Lf.SetJudgeCount(_myJudge);
+            LiveNotesFunctions.SetJudgeCount(_myJudge);
             GameParameters.LaneQueue[Lane].RemoveAt(0);
         }
     }

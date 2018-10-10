@@ -1,4 +1,4 @@
-namespace Game
+namespace game
 {
     public abstract class BaseComposer
     {

@@ -2,7 +2,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game
+namespace game
 {
     public class JudgeTextManager : MonoBehaviour
     {

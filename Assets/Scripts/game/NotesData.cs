@@ -1,7 +1,7 @@
 
 using System.Diagnostics;
 
-namespace Game
+namespace game
 {
     public class NotesData
     {

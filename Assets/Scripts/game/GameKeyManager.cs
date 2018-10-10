@@ -1,7 +1,7 @@
-﻿using Game;
+﻿using game;
 using UnityEngine;
 using UnityEngine.UI;
-using Lf = Game.LiveNotesFunctions;
+using Lf = game.LiveNotesFunctions;
 
 namespace game
 {

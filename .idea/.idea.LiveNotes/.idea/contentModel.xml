@@ -17,6 +17,7 @@
               <e p="ComposerPlain.cs" t="Include" />
             </e>
             <e p="GameKeyManager.cs" t="Include" />
+            <e p="GameOrder.cs" t="Include" />
             <e p="gameParameters.cs" t="Include" />
             <e p="JudgeTextManager.cs" t="Include" />
             <e p="LiveNotesFunctions.cs" t="Include" />

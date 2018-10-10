@@ -1,19 +1,19 @@
 using UnityEngine;
 
-namespace Game
+namespace game
 {
     public class ComposerPlain : BaseComposer
     {
-        private static readonly ComposerPlain composerPlain = new ComposerPlain();
+        //TODO:Singletonを何とかsuperクラスに書けないものか...！
+        private static readonly ComposerPlain composerInstance = new ComposerPlain();
 
         private ComposerPlain()
         {
-            
         }
 
         public static ComposerPlain GetInstance()
         {
-            return composerPlain;
+            return composerInstance;
         }
         
         public override int[] GeneratePhrase(ushort length, byte max, byte min)

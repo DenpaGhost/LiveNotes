@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using UnityEngine;
-using Lf = Game.LiveNotesFunctions;
+using Lf = game.LiveNotesFunctions;
 
-namespace Game
+namespace game
 {
 	public class Border : MonoBehaviour {
 
@@ -16,7 +16,7 @@ namespace Game
 		private void Update ()
 		{
 			//描画される位置を計算
-			var position = Lf.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
+			var position = LiveNotesFunctions.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
 			
 			//配置
 			gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, GameConstants.JUDGE_LINE_Y + position);
@@ -28,7 +28,7 @@ namespace Game
 				if (GameParameters.NotesList.Count < GameParameters.MinListCount && !doesCheckListCount)
 				{
 					//必要数を下回ってたら生成
-					GameParameters.NotesList = Lf.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
+					GameParameters.NotesList = LiveNotesFunctions.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
 					doesCheckListCount = true;
 				}
 				
