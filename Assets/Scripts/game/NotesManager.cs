@@ -14,8 +14,8 @@ namespace game
             GameParameters.Bpm = 240;
             GameParameters.Max = 3;
             GameParameters.Min = 0;
-            GameParameters.Num = 8;
-            GameParameters.Repeat = 4;
+            GameParameters.PhraseLength = 8;
+            GameParameters.RefreshRate = 4;
             GameParameters.Speed = 5;
             GameParameters.NoteLength = 4;
 

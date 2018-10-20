@@ -15,9 +15,9 @@ namespace game
 
         public static ushort Bpm { get; set; }
 
-        public static ushort Num { get; set; }
+        public static ushort PhraseLength { get; set; }
 
-        public static ushort Repeat { get; set; }
+        public static ushort RefreshRate { get; set; }
 
         public static byte Max { get; set; }
 

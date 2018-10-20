@@ -26,6 +26,8 @@
             <e p="NotesManager.cs" t="Include" />
             <e p="SettingParametersUI" t="Include">
               <e p="BpmSetButton.cs" t="Include" />
+              <e p="PhraseLengthButton.cs" t="Include" />
+              <e p="RefreshRateSetButton.cs" t="Include" />
               <e p="SetParametersUiBaseButton.cs" t="Include" />
               <e p="ValueSlider.cs" t="Include" />
             </e>

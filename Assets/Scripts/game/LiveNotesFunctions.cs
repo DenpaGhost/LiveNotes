@@ -38,9 +38,9 @@ namespace game
             //超えるまで作る
             while (list.Count <= GameParameters.MinListCount)
             {
-                var phrase = composer.GeneratePhrase(GameParameters.Num, GameParameters.Max, GameParameters.Min);
+                var phrase = composer.GeneratePhrase(GameParameters.PhraseLength, GameParameters.Max, GameParameters.Min);
 
-                for (var repeat = 0; repeat < GameParameters.Repeat; repeat++)
+                for (var repeat = 0; repeat < GameParameters.RefreshRate; repeat++)
                 {
                     foreach (var note in phrase)
                     {
@@ -231,10 +231,10 @@ namespace game
                 GameParameters.Max + " : " + GameParameters.Min;
             
             GameObject.Find("PhraseValue").GetComponent<Text>().text = 
-                UtilFunctions.PutComma(GameParameters.Num);
+                UtilFunctions.PutComma(GameParameters.PhraseLength);
             
             GameObject.Find("RefreshRateValue").GetComponent<Text>().text =
-                UtilFunctions.PutComma(GameParameters.Repeat);
+                UtilFunctions.PutComma(GameParameters.RefreshRate);
             
             GameObject.Find("NoteLengthValue").GetComponent<Text>().text = 
                 "4";
