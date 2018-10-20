@@ -18,7 +18,7 @@ namespace game
         private void Update ()
         {
             //描画される位置を計算
-            var position = LiveNotesFunctions.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
+            var position = NotesOperator.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
             //配置
             gameObject.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, GameConstants.JUDGE_LINE_Y + position);
 

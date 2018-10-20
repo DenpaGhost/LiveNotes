@@ -16,7 +16,7 @@ namespace game
 		private void Update ()
 		{
 			//描画される位置を計算
-			var position = LiveNotesFunctions.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
+			var position = NotesOperator.CalcSpawnPosition(Timer.ElapsedTicks, TargetTime);
 			
 			//配置
 			gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, GameConstants.JUDGE_LINE_Y + position);
@@ -28,7 +28,7 @@ namespace game
 				if (GameParameters.NotesList.Count < GameParameters.MinListCount && !doesCheckListCount)
 				{
 					//必要数を下回ってたら生成
-					GameParameters.NotesList = LiveNotesFunctions.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
+					GameParameters.NotesList = NotesOperator.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
 					doesCheckListCount = true;
 				}
 				

@@ -8,22 +8,25 @@ namespace game
     {
         public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder, fpsView;
 
+        private void Awake()
+        {
+            //判定線オブジェクトのAudioSource取得
+            GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
+
+            // オブジェクトの取得
+             LiveNotesFunctions.FindViews();
+
+            // パラメータをViewで表示
+            LiveNotesFunctions.SetParametersToView();
+        }
+
         private void OnEnable()
         {
-            // パラメータ代入 TODO:デバッグ用
-            GameParameters.Bpm = 240;
-            GameParameters.Max = 3;
-            GameParameters.Min = 0;
-            GameParameters.PhraseLength = 8;
-            GameParameters.RefreshRate = 4;
-            GameParameters.Speed = 5;
-            GameParameters.NoteLength = 4;
-
             //初期化関数を回す
             LiveNotesFunctions.GameStartingInit();
 
             //最初のノーツを出す
-            LiveNotesFunctions.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
+            NotesOperator.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
         }
 
         private void OnDisable()
@@ -35,7 +38,7 @@ namespace game
         // Update is called once per frame
         private void Update()
         {
-            LiveNotesFunctions.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
+            NotesOperator.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
 
             fpsView.GetComponent<Text>().text = UtilFunctions.ShowFps();
         }
