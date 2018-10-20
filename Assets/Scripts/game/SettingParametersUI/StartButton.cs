@@ -17,7 +17,7 @@ namespace game
             GameParameters.Speed = 5;
             GameParameters.NoteLength = 4;
 
-            LiveNotesFunctions.SetParametersToView();
+            ViewOperator.SetParametersToView();
         }
 
         public void OnClick()

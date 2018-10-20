@@ -20,11 +20,11 @@
             <e p="GameOrder.cs" t="Include" />
             <e p="gameParameters.cs" t="Include" />
             <e p="JudgeTextManager.cs" t="Include" />
-            <e p="LiveNotesFunctions.cs" t="Include" />
             <e p="Note.cs" t="Include" />
             <e p="NotesData.cs" t="Include" />
             <e p="NotesManager.cs" t="Include" />
             <e p="NotesOperator.cs" t="Include" />
+            <e p="ScoreOperator.cs" t="Include" />
             <e p="SettingParametersUI" t="Include">
               <e p="BpmSetButton.cs" t="Include" />
               <e p="PhraseLengthButton.cs" t="Include" />
@@ -33,6 +33,7 @@
               <e p="StartButton.cs" t="Include" />
               <e p="ValueSlider.cs" t="Include" />
             </e>
+            <e p="ViewOperator.cs" t="Include" />
           </e>
           <e p="Settings" t="Include">
             <e p="BaseSettingsButton.cs" t="Include" />

@@ -8,16 +8,9 @@ using Random = UnityEngine.Random;
 
 namespace game
 {
-    public class LiveNotesFunctions : MonoBehaviour
+    public class ViewOperator : MonoBehaviour
     {
-        //デバッグ用。判定表示。
-        public static void SetJudgeText(string text)
-        {
-            GameParameters.JudgeTextObject.GetComponent<Text>().text = text;
-            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Stop();
-            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Reset();
-            GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Start();
-        }
+        
 
         //パラメータ初期化系のやつ
         public static void GameStartingInit()

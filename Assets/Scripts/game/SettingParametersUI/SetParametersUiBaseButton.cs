@@ -21,12 +21,12 @@ namespace game
                     gameObject.GetComponent<RectTransform>().position.y
                     );
 
-            LiveNotesFunctions.SetCurrentSelect(SliderInstance.GetComponent<Transform>().Find("Slider").gameObject);
+            ViewOperator.SetCurrentSelect(SliderInstance.GetComponent<Transform>().Find("Slider").gameObject);
         }
 
         public virtual void onReturnButton(float value)
         {
-            LiveNotesFunctions.SetParametersToView();
+            ViewOperator.SetParametersToView();
             setText(UtilFunctions.PutComma((long)value));
         }
 

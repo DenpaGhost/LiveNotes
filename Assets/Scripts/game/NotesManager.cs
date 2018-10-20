@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Lf = game.LiveNotesFunctions;
 
 namespace game
 {
@@ -14,16 +13,16 @@ namespace game
             GameParameters.JudgeLineSpeaker = GameObject.Find("judgeLine").GetComponent<AudioSource>();
 
             // オブジェクトの取得
-             LiveNotesFunctions.FindViews();
+             ViewOperator.FindViews();
 
             // パラメータをViewで表示
-            LiveNotesFunctions.SetParametersToView();
+            ViewOperator.SetParametersToView();
         }
 
         private void OnEnable()
         {
             //初期化関数を回す
-            LiveNotesFunctions.GameStartingInit();
+            ViewOperator.GameStartingInit();
 
             //最初のノーツを出す
             NotesOperator.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);

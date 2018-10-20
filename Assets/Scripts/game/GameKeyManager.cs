@@ -1,7 +1,6 @@
 ﻿using game;
 using UnityEngine;
 using UnityEngine.UI;
-using Lf = game.LiveNotesFunctions;
 
 namespace game
 {
@@ -31,13 +30,13 @@ namespace game
                 {
                     GameParameters.Speed += 1;
                     _canChangeSpeed = false;
-                    Lf.RefreshSpeedView();
+                    ViewOperator.RefreshSpeedView();
                 }
                 else if (Input.GetAxisRaw("Vertical") < 0 && _canChangeSpeed)
                 {
                     GameParameters.Speed -= 1;
                     _canChangeSpeed = false;
-                    Lf.RefreshSpeedView();
+                    ViewOperator.RefreshSpeedView();
                 }
             }
             else
