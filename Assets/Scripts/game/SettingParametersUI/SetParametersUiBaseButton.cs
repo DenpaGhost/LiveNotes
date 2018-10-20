@@ -1,9 +1,8 @@
-using System.Collections;
 using UnityEngine;
 
 namespace game
 {
-    public class SetParametersUiBaseButton: MonoBehaviour
+    public abstract class SetParametersUiBaseButton: MonoBehaviour
     {
         public GameObject SliderTemplate;
         public GameObject SettingsCard;
@@ -23,10 +22,7 @@ namespace game
             LiveNotesFunctions.SetCurrentSelect(SliderInstance.GetComponent<Transform>().Find("Slider").gameObject);
         }
 
-        public virtual void setParameter(ushort value)
-        {
-            
-        }
+        public abstract void onReturnButton(float value);
 
     }
 }

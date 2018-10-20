@@ -1,3 +1,5 @@
+using System;
+
 namespace game
 {
     public class BpmSetButton : SetParametersUiBaseButton
@@ -16,9 +18,9 @@ namespace game
             
         }
 
-        public override void setParameter(ushort value)
+        public override void onReturnButton(float value)
         {
-            GameParameters.Bpm = value;
+            GameParameters.Bpm = (ushort) value;
             LiveNotesFunctions.SetParametersToView();
         }
     }

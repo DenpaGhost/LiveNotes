@@ -31,7 +31,7 @@ namespace game
 
         public void Deselect()
         {
-            calledButtonClass.setParameter((ushort)slider.GetComponent<Slider>().value);
+            calledButtonClass.onReturnButton(slider.GetComponent<Slider>().value);
             Destroy(gameObject);
         }
     }
