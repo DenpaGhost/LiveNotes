@@ -1,22 +1,32 @@
+using System.Collections;
 using UnityEngine;
 
 namespace game
 {
     public class SetParametersUiBaseButton: MonoBehaviour
     {
-        public GameObject Slider;
+        public GameObject SliderTemplate;
         public GameObject SettingsCard;
+
+        protected GameObject SliderInstance;
+        
         public virtual void OnClick()
         {
-            var instanceSlider = Instantiate(Slider);
-            instanceSlider.GetComponent<Transform>().SetParent(SettingsCard.GetComponent<Transform>());
-            instanceSlider.GetComponent<RectTransform>().position = 
+            SliderInstance = Instantiate(SliderTemplate);
+            SliderInstance.GetComponent<Transform>().SetParent(SettingsCard.GetComponent<Transform>());
+            SliderInstance.GetComponent<RectTransform>().position = 
                 new Vector2(
                     gameObject.GetComponent<RectTransform>().position.x, 
                     gameObject.GetComponent<RectTransform>().position.y
                     );
 
-            LiveNotesFunctions.SetCurrentSelect(instanceSlider.GetComponent<Transform>().Find("Slider").gameObject);
+            LiveNotesFunctions.SetCurrentSelect(SliderInstance.GetComponent<Transform>().Find("Slider").gameObject);
         }
+
+        public virtual void setParameter(ushort value)
+        {
+            
+        }
+
     }
 }

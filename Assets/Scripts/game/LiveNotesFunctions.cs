@@ -219,7 +219,7 @@ namespace game
             GameParameters.SpeedTextView = GameObject.Find("speedValue");
         }
 
-        private static void SetParametersToView()
+        public static void SetParametersToView()
         {
             GameObject.Find("ComposerValue").GetComponent<Text>().text =
                 "Debug";
