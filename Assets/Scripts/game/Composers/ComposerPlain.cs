@@ -4,7 +4,6 @@ namespace game
 {
     public class ComposerPlain : BaseComposer
     {
-        //TODO:Singletonを何とかsuperクラスに書けないものか...！
         private static readonly ComposerPlain composerInstance = new ComposerPlain();
 
         private ComposerPlain()

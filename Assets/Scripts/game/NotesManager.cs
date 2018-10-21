@@ -17,6 +17,15 @@ namespace game
 
             // パラメータをViewで表示
             ViewOperator.SetParametersToView();
+            
+            // パラメータ代入 TODO:デバッグ用
+            GameParameters.Bpm = 240;
+            GameParameters.Max = 2;
+            GameParameters.Min = 1;
+            GameParameters.PhraseLength = 8;
+            GameParameters.RefreshRate = 4;
+            GameParameters.Speed = 5;
+            GameParameters.NoteLength = 4;
         }
 
         private void OnEnable()
