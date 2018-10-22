@@ -7,6 +7,8 @@ namespace game
     {
         public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder;
 
+        private bool isGenerating;
+
         private void Awake()
         {
             //判定線オブジェクトのAudioSource取得
