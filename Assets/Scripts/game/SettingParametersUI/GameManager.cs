@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace game
 {
-    public class StartButton : MonoBehaviour
+    public class GameManager : MonoBehaviour
     {
         public GameObject 
             eventSystem,
