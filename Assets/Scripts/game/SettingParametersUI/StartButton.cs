@@ -4,7 +4,9 @@ namespace game
 {
     public class StartButton : MonoBehaviour
     {
-        public GameObject eventSystem;
+        public GameObject 
+            eventSystem,
+            settingCard;
 
         private void Start()
         {
@@ -14,6 +16,7 @@ namespace game
         public void OnClick()
         {
             eventSystem.GetComponent<NotesManager>().enabled = true;
+            settingCard.SetActive(false);
         }
 
         private void Update()
@@ -21,6 +24,7 @@ namespace game
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 eventSystem.GetComponent<NotesManager>().enabled = false;
+                settingCard.SetActive(true);
             }
         }
     }

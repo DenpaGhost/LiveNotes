@@ -9,11 +9,6 @@ namespace game
         public GameObject keyA, keyAs, keyB, keyBs, keyC, keyCs, keyD;
         private bool _canChangeSpeed = true;
 
-        // Use this for initialization
-        void Start()
-        {
-        }
-
         // Update is called once per frame
         private void Update()
         {

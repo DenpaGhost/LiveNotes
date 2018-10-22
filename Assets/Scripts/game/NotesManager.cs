@@ -5,7 +5,7 @@ namespace game
 {
     public class NotesManager : MonoBehaviour
     {
-        public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder, fpsView;
+        public GameObject _notesArea, _noteSmall, _noteWide, _noteBorder;
 
         private void Awake()
         {
@@ -47,8 +47,6 @@ namespace game
         private void Update()
         {
             NotesOperator.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
-
-            fpsView.GetComponent<Text>().text = UtilFunctions.ShowFps();
         }
     }
 }
