@@ -7,11 +7,8 @@ namespace game
     public class NotesOperator : MonoBehaviour
     {
         //リストをいっぱいにするための関数
-        public static List<NotesData> PushNotesDataToList(List<NotesData> list, BaseComposer composer)
+        public static void PushNotesDataToList(List<NotesData> list, BaseComposer composer)
         {   
-            //targetTimeをずらすためのカウンタ
-            var counter = 0;
-            
             //それぞれのノーツが参照するタイマーの設定
             var timer = new Stopwatch();
             timer.Start();
@@ -31,6 +28,9 @@ namespace game
                 offset = (list.Count + drawNotesCount) * GameParameters.Interval;
             }
             
+            //targetTimeをずらすためのカウンタ
+            var counter = 0;
+            
             //超えるまで作る
             while (list.Count <= GameParameters.MinListCount)
             {
@@ -47,7 +47,6 @@ namespace game
                 }
             }
             
-            return list;
         }
         
         //ノーツ生成時の初期位置を計算する関数

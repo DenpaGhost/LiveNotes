@@ -10,8 +10,6 @@ namespace game
 {
     public class ViewOperator : MonoBehaviour
     {
-        
-
         //パラメータ初期化系のやつ
         public static void GameStartingInit()
         {
@@ -26,8 +24,7 @@ namespace game
 
             //Listに詰めこむ
             GameParameters.NotesList = new List<NotesData>();
-            GameParameters.NotesList =
-                NotesOperator.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
+            NotesOperator.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
 
             //リストの最低必要個数を計算
             GameParameters.MinListCount = GameParameters.NotesList.Count;

@@ -27,7 +27,7 @@ namespace game
 				if (GameParameters.NotesList.Count < GameParameters.MinListCount && !doesCheckListCount)
 				{
 					//必要数を下回ってたら生成
-					GameParameters.NotesList = NotesOperator.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
+					NotesOperator.PushNotesDataToList(GameParameters.NotesList, ComposerPlain.GetInstance());
 					doesCheckListCount = true;
 				}
 				
