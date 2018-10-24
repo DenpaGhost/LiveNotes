@@ -1,27 +1,29 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace game
 {
-    public class ValueSlider:MonoBehaviour
+    public class ValueSlider : MonoBehaviour
     {
         public GameObject _valueView;
         public GameObject slider;
-        private SetParametersUiBaseButton calledButtonClass;
+        private GameObject calledButtonObject;
+        private bool doesExitPointer;
 
-        public void SetValue(int maxValue, int minValue, int initValue,SetParametersUiBaseButton button)
+        public void SetValue(int maxValue, int minValue, int initValue, GameObject button)
         {
             var sliderUI = slider.GetComponent<Slider>();
             sliderUI.maxValue = maxValue;
             sliderUI.minValue = minValue;
             sliderUI.value = initValue;
-            calledButtonClass = button;
+            calledButtonObject = button;
         }
-        
+
         public void OnValueChanged()
         {
-            _SetText( slider.GetComponent<Slider>().value.ToString() );
+            _SetText(UtilFunctions.PutComma(slider.GetComponent<Slider>().value));
         }
 
         private void _SetText(string value)
@@ -29,9 +31,37 @@ namespace game
             _valueView.GetComponent<Text>().text = value;
         }
 
-        public void Deselect()
+        public void PointerExit()
         {
-            calledButtonClass.onReturnButton(slider.GetComponent<Slider>().value);
+            doesExitPointer = true;
+        }
+
+        public void PointerEnter()
+        {
+            doesExitPointer = false;
+        }
+
+        private void Update()
+        {
+            if (doesExitPointer && Input.GetMouseButtonDown(0))
+            {
+                closeSlider();
+            }
+        }
+
+        public void positiveButtonClickEvent()
+        {
+            closeSlider();
+        }
+
+        public void negativeButtonClickEvent()
+        {
+            Destroy(gameObject);
+        }
+        
+        private void closeSlider()
+        {
+            calledButtonObject.GetComponent<SetParametersUiBaseButton>().onReturnButton(slider.GetComponent<Slider>().value);
             Destroy(gameObject);
         }
     }

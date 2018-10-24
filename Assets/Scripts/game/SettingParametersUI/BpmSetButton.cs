@@ -16,7 +16,7 @@ namespace game
                 GameConstants.BPM_MAX,
                 GameConstants.BPM_MIN,
                 GameParameters.Bpm,
-                this
+                gameObject
             );
         }
 

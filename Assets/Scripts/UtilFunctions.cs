@@ -7,4 +7,9 @@ public static class UtilFunctions
     {
         return $"{num:#,0}";
     }
+    
+    public static string PutComma(float num)
+    {
+        return $"{num:#,0.#}";
+    }
 }

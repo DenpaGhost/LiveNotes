@@ -16,7 +16,7 @@ namespace game
                 GameConstants.REFRESH_RATE_MAX,
                 GameConstants.REFRESH_RATE_MIN,
                 GameParameters.RefreshRate,
-                this
+                gameObject
             );
         }
 

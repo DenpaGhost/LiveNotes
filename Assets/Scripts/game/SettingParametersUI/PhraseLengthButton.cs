@@ -16,7 +16,7 @@ namespace game
                 GameConstants.PHRASE_MAX,
                 GameConstants.PHRASE_MIN,
                 GameParameters.PhraseLength,
-                this
+                gameObject
             );
         }
 
