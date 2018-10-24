@@ -14,7 +14,7 @@ public static class GameConstants
         KEY_NAME = {"KeyA", "KeyAs", "KeyB", "KeyBs", "KeyC", "KeyCs", "KeyD"};
 
     public static readonly float[]
-        LANE_POSITION_DATA_X = {-168.5f, -112.5f, -56.25f, 0, 56.25f, 112.5f, 168.5f};
+        LANE_POSITION_DATA_X = {-168.75f, -112.5f, -56.25f, 0, 56.25f, 112.5f, 168.75f};
 
     public const long
         DEFAULT_OFFSET = 30000000,
