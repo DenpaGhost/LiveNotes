@@ -14,7 +14,7 @@ namespace game
             //Sliderの初期化処理
             SliderInstance.GetComponent<ValueSlider>().SetValue(
                 7,
-                1,
+                GameParameters.Min,
                 GameParameters.Max,
                 gameObject
             );
