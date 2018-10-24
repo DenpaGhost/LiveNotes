@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222795291562964464}
   - component: {fileID: 114692828548863312}
   - component: {fileID: 114369891399205020}
+  - component: {fileID: 114426233235802132}
   m_Layer: 5
   m_Name: NoteShort
   m_TagString: Note
@@ -40,6 +41,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16546bfc380d4c84a5be2a49ef5daa6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114426233235802132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585471419318850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114692828548863312
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -16,7 +16,7 @@ namespace game
             KeyUpEvent();
             ChangeSpeed();
         }
-
+        
         private void ChangeSpeed()
         {
             if (Input.GetButtonDown("Vertical"))

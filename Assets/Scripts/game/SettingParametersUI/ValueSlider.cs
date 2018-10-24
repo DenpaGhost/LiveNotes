@@ -19,6 +19,8 @@ namespace game
             sliderUI.minValue = minValue;
             sliderUI.value = initValue;
             calledButtonObject = button;
+            
+            _SetText(UtilFunctions.PutComma(sliderUI.value));
         }
 
         public void OnValueChanged()

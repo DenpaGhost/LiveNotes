@@ -3697,6 +3697,7 @@ GameObject:
   - component: {fileID: 587948892}
   - component: {fileID: 587948891}
   - component: {fileID: 587948890}
+  - component: {fileID: 587948889}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3723,6 +3724,19 @@ RectTransform:
   m_AnchoredPosition: {x: 75, y: 0}
   m_SizeDelta: {x: -150, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &587948889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 587948887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1470e3025784a2a86a06592fa60bda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SliderTemplate: {fileID: 1249038482}
+  SettingsCard: {fileID: 1660599990}
 --- !u!114 &587948890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3762,7 +3776,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 587948889}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -5906,6 +5920,7 @@ GameObject:
   - component: {fileID: 1056502273}
   - component: {fileID: 1056502272}
   - component: {fileID: 1056502271}
+  - component: {fileID: 1056502270}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5932,6 +5947,19 @@ RectTransform:
   m_AnchoredPosition: {x: 75, y: 0}
   m_SizeDelta: {x: -150, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1056502270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1056502268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa06ff0987b34cd796fa3bdbacea0cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SliderTemplate: {fileID: 1249038482}
+  SettingsCard: {fileID: 1660599990}
 --- !u!114 &1056502271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5971,7 +5999,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1056502270}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
