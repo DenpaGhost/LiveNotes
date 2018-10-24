@@ -10,6 +10,7 @@
         <e p="Scripts" t="Include">
           <e p="BaseUiButton.cs" t="Include" />
           <e p="Constants.cs" t="Include" />
+          <e p="destroyAfter500ms.cs" t="Include" />
           <e p="fpsCounter.cs" t="Include" />
           <e p="game" t="Include">
             <e p="Border.cs" t="Include" />
