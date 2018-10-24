@@ -63,6 +63,7 @@ namespace game
         
         public static AudioSource JudgeLineSpeaker { get; set; }
         public static GameObject JudgeTextObject { get; set; }
+        public static GameObject JudgeEffectFrame { get; set; }
 
         public static GameObject ScoreTextView { get; set; }
         public static GameObject PerfectTextView { get; set; }

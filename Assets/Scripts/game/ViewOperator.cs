@@ -34,6 +34,7 @@ namespace game
         {
             //判定表示UI Textの初期化
             GameParameters.JudgeTextObject = GameObject.Find("JudgeText");
+            GameParameters.JudgeEffectFrame = GameObject.Find("JudgeEffectFrame");
 
             //左側の数字出すとこのオブジェクト取得
             GameParameters.ScoreTextView = GameObject.Find("scoreValue");

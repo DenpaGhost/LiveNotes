@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace game
 {
     public class Note : MonoBehaviour
     {
+        public GameObject judgeEffect;
+        
         public long TargetTime { private get; set; }
         public Stopwatch Timer { private get; set; }
         public int Lane { private get; set; }
@@ -100,7 +103,21 @@ namespace game
             GameParameters.NotesCount += 1;
             
             ScoreOperator.SetJudgeCount(_myJudge);
+            showJudgeEffect(_myJudge);
+            
             GameParameters.LaneQueue[Lane].RemoveAt(0);
+        }
+
+        private void showJudgeEffect(GameConstants.Judge judge)
+        {
+            var effect = Instantiate(judgeEffect);
+            effect.transform.SetParent(GameParameters.JudgeEffectFrame.transform);
+
+            effect.GetComponent<Image>().color = ConstantsColors.JUDGE_COLOR[judge.GetHashCode()];
+            
+            //エフェクトの表示位置
+            effect.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, 0);
+            effect.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
         }
     }
     

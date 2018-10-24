@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 222446551460883760}
   - component: {fileID: 114936976088894992}
   - component: {fileID: 114595043907742568}
-  - component: {fileID: 114104565513912760}
   m_Layer: 5
   m_Name: NoteLong
   m_TagString: Note
@@ -30,20 +29,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114104565513912760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1858384313463876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 0, y: -1}
-  m_UseGraphicAlpha: 1
 --- !u!114 &114595043907742568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,6 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16546bfc380d4c84a5be2a49ef5daa6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  judgeEffect: {fileID: 1190758637921314, guid: 3989be9bb186639479f41a846c8dfa9e,
+    type: 2}
 --- !u!114 &114936976088894992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,5 +92,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 600, y: 600}
-  m_SizeDelta: {x: 63, y: 10}
+  m_SizeDelta: {x: 62.5, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -22,8 +22,8 @@ public static class GameConstants
         JUDGE_TEXT_INVISIBLE_TIME = 5000000;
 
     public const long
-        JUDGE_MISS = 1200000,
-        JUDGE_GOOD = 600000,
+        JUDGE_MISS = 3000000,
+        JUDGE_GOOD = 1000000,
         JUDGE_GREAT = 400000,
         JUDGE_PERFECT = 200000;
 
@@ -60,6 +60,14 @@ public static class ConstantsColors
     public static readonly Color KEY_COLOR_BLACK_PUSH = new Color32(239, 83, 80, 255); //#ef5350
     public static readonly Color SETTINGS_BUTTON_NORMAL = new Color32(245, 245, 245, 255);
     public static readonly Color SETTINGS_BUTTON_HIGHLIGHT = new Color32(224, 224, 224, 255);
+
+    public static readonly Color[] JUDGE_COLOR =
+    {
+        new Color32(255, 160, 0, 255),
+        new Color32(229, 57, 53, 255),
+        new Color32(67, 160, 71, 255),
+        new Color32(117,117,117,255)
+    };
 }
 
 public static class UiConstants

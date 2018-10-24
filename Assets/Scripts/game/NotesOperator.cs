@@ -84,6 +84,7 @@ namespace game
                     border.GetComponent<RectTransform>().localPosition = new Vector2(
                         border.GetComponent<RectTransform>().localPosition.x,
                         GameConstants.JUDGE_LINE_Y + spawnPosition);
+                    
                     border.GetComponent<RectTransform>().offsetMin = noteBorder.GetComponent<RectTransform>().offsetMin;
                     border.GetComponent<RectTransform>().offsetMax = noteBorder.GetComponent<RectTransform>().offsetMax;
 
