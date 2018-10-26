@@ -54,25 +54,21 @@ namespace game
 
                 if (TargetTime + GameConstants.JUDGE_PERFECT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_PERFECT <= Timer.ElapsedTicks)
                 {
-                    ScoreOperator.SetJudgeText("Perfect!!!");
                     _myJudge = GameConstants.Judge.Perfect;
                     Destroy(gameObject);
                 }
                 else if (TargetTime + GameConstants.JUDGE_GREAT >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GREAT <= Timer.ElapsedTicks)
                 {
-                    ScoreOperator.SetJudgeText("Great!!");
                     _myJudge = GameConstants.Judge.Great;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_GOOD >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_GOOD <= Timer.ElapsedTicks)
                 {
-                    ScoreOperator.SetJudgeText("Good!");
                     _myJudge = GameConstants.Judge.Good;
                     Destroy(gameObject);
                 } 
                 else if (TargetTime + GameConstants.JUDGE_MISS >= Timer.ElapsedTicks && TargetTime - GameConstants.JUDGE_MISS <= Timer.ElapsedTicks)
                 {
-                    ScoreOperator.SetJudgeText("Miss...");
                     Destroy(gameObject);
                 }
                 
@@ -103,17 +99,18 @@ namespace game
             GameParameters.NotesCount += 1;
             
             ScoreOperator.SetJudgeCount(_myJudge);
-            showJudgeEffect(_myJudge);
+            ScoreOperator.SetJudgeText(_myJudge);
+            showJudgeEffect();
             
             GameParameters.LaneQueue[Lane].RemoveAt(0);
         }
 
-        private void showJudgeEffect(GameConstants.Judge judge)
+        private void showJudgeEffect()
         {
             var effect = Instantiate(judgeEffect);
             effect.transform.SetParent(GameParameters.JudgeEffectFrame.transform);
 
-            effect.GetComponent<Image>().color = ConstantsColors.JUDGE_COLOR[judge.GetHashCode()];
+            effect.GetComponent<Image>().color = _myJudge == GameConstants.Judge.Miss ? ConstantsColors.JUDGE_COLOR[3] : ConstantsColors.BEAM_COLOR;
             
             //エフェクトの表示位置
             effect.GetComponent<RectTransform>().localPosition = new Vector2(gameObject.GetComponent<RectTransform>().localPosition.x, 0);

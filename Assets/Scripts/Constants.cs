@@ -50,6 +50,14 @@ public static class GameConstants
         Good,
         Miss
     }
+
+    public static readonly string[] JUDGE_STRINGS =
+    {
+        "Perfect!!!",
+        "Great!!",
+        "Good!",
+        "Miss..."
+    };
 }
 
 public static class ConstantsColors
@@ -68,6 +76,8 @@ public static class ConstantsColors
         new Color32(67, 160, 71, 255),
         new Color32(117,117,117,255)
     };
+    
+    public static readonly Color BEAM_COLOR = new Color32(33,150,243,255);
 }
 
 public static class UiConstants

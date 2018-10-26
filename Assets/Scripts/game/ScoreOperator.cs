@@ -44,9 +44,12 @@ namespace game
         }
         
         //デバッグ用。判定表示。
-        public static void SetJudgeText(string text)
+        public static void SetJudgeText(GameConstants.Judge judge)
         {
-            GameParameters.JudgeTextObject.GetComponent<Text>().text = text;
+            GameParameters.JudgeTextObject.GetComponent<Text>().text = 
+                GameConstants.JUDGE_STRINGS[judge.GetHashCode()];
+            GameParameters.JudgeTextObject.GetComponent<Text>().color =
+                ConstantsColors.JUDGE_COLOR[judge.GetHashCode()];
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Stop();
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Reset();
             GameParameters.JudgeTextObject.GetComponent<JudgeTextManager>().stopwatch.Start();
