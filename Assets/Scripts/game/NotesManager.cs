@@ -34,6 +34,9 @@ namespace game
         {
             //初期化関数を回す
             ViewOperator.GameStartingInit();
+            
+            //スコアをゼロクリア
+            ScoreOperator.ZeroClearScores();
 
             //最初のノーツを出す
             NotesOperator.SpawnNote(GameParameters.NotesList, _notesArea, _noteWide, _noteSmall, _noteBorder);
@@ -41,7 +44,24 @@ namespace game
 
         private void OnDisable()
         {
+            //ゲーム停止処理
             GameParameters.NotesList.Clear();
+
+            foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Note"))
+            {
+                VARIABLE.GetComponent<Note>().isStopped = true;
+                Destroy(VARIABLE);
+            }
+
+            foreach (var VARIABLE in GameObject.FindGameObjectsWithTag("Border"))
+            {
+                Destroy(VARIABLE);
+            }
+            
+            foreach (var VARIABLE in GameParameters.LaneQueue)
+            {
+                VARIABLE.Clear();
+            }
             
         }
 

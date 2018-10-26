@@ -9,7 +9,7 @@ namespace game
 		public Stopwatch Timer { private get; set; }
 		public AudioClip soundClick;
 
-		private bool doesCheckListCount = false;
+		private bool doesCheckListCount;
 	
 		// Update is called once per frame
 		private void Update ()

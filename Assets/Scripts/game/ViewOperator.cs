@@ -47,9 +47,6 @@ namespace game
 
         public static void SetParametersToView()
         {
-            GameObject.Find("ComposerValue").GetComponent<Text>().text =
-                "Debug";
-
             GameObject.Find("BPMValue").GetComponent<Text>().text =
                 UtilFunctions.PutComma(GameParameters.Bpm);
 

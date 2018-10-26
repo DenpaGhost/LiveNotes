@@ -8,7 +8,7 @@ namespace game
     public class Note : MonoBehaviour
     {
         public GameObject judgeEffect;
-        
+        public bool isStopped;
         public long TargetTime { private get; set; }
         public Stopwatch Timer { private get; set; }
         public int Lane { private get; set; }
@@ -37,7 +37,7 @@ namespace game
         private void IsPassedTargetTime()
         {
             //線上で待機
-            if (TargetTime + GameConstants.NOTE_IS_ON_LINE_WAIT_TIME <= Timer.ElapsedTicks)
+            if (TargetTime + GameConstants.JUDGE_GOOD <= Timer.ElapsedTicks)
             {
                 Destroy(gameObject);
             }
@@ -77,6 +77,11 @@ namespace game
 
         private void OnDestroy()
         {
+            if (isStopped)
+            {
+                return;
+            }
+            
             switch (_myJudge)
             {
                 case GameConstants.Judge.Perfect:
