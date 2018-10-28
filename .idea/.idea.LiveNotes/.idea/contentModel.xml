@@ -38,6 +38,11 @@
             </e>
             <e p="ViewOperator.cs" t="Include" />
           </e>
+          <e p="module" t="Include">
+            <e p="ModuleBase.cs" t="Include" />
+            <e p="moduleData.cs" t="Include" />
+            <e p="modulePiano.cs" t="Include" />
+          </e>
           <e p="Settings" t="Include">
             <e p="BaseSettingsButton.cs" t="Include" />
             <e p="OutputButton.cs" t="Include" />
