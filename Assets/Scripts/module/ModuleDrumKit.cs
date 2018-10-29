@@ -26,5 +26,3 @@ namespace UiButtons.Title.module
         }
     }
 }
-
-}
