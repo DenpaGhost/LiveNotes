@@ -9,7 +9,5 @@ namespace UiButtons.Title.module
         public ModuleData[] ClipDates => Dates;
 
         protected ModuleData[] Dates;
-        
-        
     }
 }

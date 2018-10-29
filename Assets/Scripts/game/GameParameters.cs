@@ -7,8 +7,6 @@ namespace game
 {
     public static class GameParameters
     {
-        private static int _minListCount = 32;
-        private static List<GameObject>[] _laneQueueList = new List<GameObject>[7];
         private static float _speed = 1;
 
         public static long Interval { get; set; }
@@ -48,19 +46,12 @@ namespace game
 
         public static byte NoteLength { get; set; }
 
-        public static int MinListCount
-        {
-            get { return _minListCount; }
-            set { _minListCount = value; }
-        }
+        public static int MinListCount { get; set; } = 32;
 
         public static List<NotesData> NotesList { get; set; }
 
-        public static List<GameObject>[] LaneQueue
-        {
-            get { return _laneQueueList; }
-        }
-        
+        public static List<GameObject>[] LaneQueue { get; } = new List<GameObject>[7];
+
         public static AudioSource JudgeLineSpeaker { get; set; }
         public static GameObject JudgeTextObject { get; set; }
         public static GameObject JudgeEffectFrame { get; set; }
@@ -82,5 +73,7 @@ namespace game
         public static ulong Good { get; set; }
         public static ulong Miss { get; set; }
         public static ulong NotesCount { get; set; }
+        
+        public static string[] KeySoundsPath { get; set; } = new string[7];
     }
 }
