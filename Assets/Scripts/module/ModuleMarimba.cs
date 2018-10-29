@@ -1,6 +1,6 @@
 namespace UiButtons.Title.module
 {
-    public class ModuleMarimba:ModuleBase
+    public class ModuleMarimba : ModuleBase
     {
         public ModuleMarimba()
         {
