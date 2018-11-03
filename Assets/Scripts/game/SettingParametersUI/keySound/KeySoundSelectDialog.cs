@@ -1,5 +1,8 @@
+using System;
 using UiButtons.Title.module;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 using Button = UnityEngine.Experimental.UIElements.Button;
 
@@ -13,6 +16,8 @@ namespace game
 
         private int targetKeyID;
         private Text buttonText;
+
+        private bool doesExitPointer;
 
         public void setParameters(int targetID, Text buttonText)
         {
@@ -58,6 +63,24 @@ namespace game
         public void close()
         {
             Destroy(gameObject);
+        }
+        
+        public void PointerExit()
+        {
+            doesExitPointer = true;
+        }
+
+        public void PointerEnter()
+        {
+            doesExitPointer = false;
+        }
+
+        public void Update()
+        {
+            if (doesExitPointer && Input.GetMouseButtonDown(0))
+            {
+                close();
+            }
         }
     }
 }
