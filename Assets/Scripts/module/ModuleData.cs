@@ -2,17 +2,13 @@
 
 public class ModuleData
 {
-    private readonly string clipName;
+    public string ClipName { get; }
 
-    public string ClipName => clipName;
-
-    public string ClipPath => path;
-
-    private readonly string path;
+    public string ClipPath { get; }
 
     public ModuleData(string clipName, string path)
     {
-        this.clipName = clipName;
-        this.path = path;
+        this.ClipName = clipName;
+        this.ClipPath = path;
     }
 }

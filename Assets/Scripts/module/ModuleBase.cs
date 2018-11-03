@@ -1,6 +1,6 @@
 namespace UiButtons.Title.module
 {
-    public class ModuleBase
+    public abstract class ModuleBase
     {
         protected string ModuleName;
 

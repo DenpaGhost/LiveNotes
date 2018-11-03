@@ -23,10 +23,7 @@ namespace game
 
         public static float Speed
         {
-            get
-            {
-                return _speed;
-            }
+            get { return _speed; }
             set
             {
                 if (value > GameConstants.SPEED_MAX)
@@ -62,18 +59,14 @@ namespace game
         public static GameObject GoodTextView { get; set; }
         public static GameObject MissTextView { get; set; }
 
-        public static GameObject SpeedTextView
-        {
-            get;
-            set;
-        }
+        public static GameObject SpeedTextView { get; set; }
 
         public static ulong Perfect { get; set; }
         public static ulong Great { get; set; }
         public static ulong Good { get; set; }
         public static ulong Miss { get; set; }
         public static ulong NotesCount { get; set; }
-        
-        public static string[] KeySoundsPath { get; set; } = new string[7];
+
+        public static AudioClip[] KeySounds { get; } = new AudioClip[7];
     }
 }
