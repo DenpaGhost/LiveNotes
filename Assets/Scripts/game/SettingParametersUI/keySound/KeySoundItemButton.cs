@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,7 +34,11 @@ namespace game
             listView.close();
             buttonText.text = ModuleName + "\n" + Name;
             Debug.Log(Path);
+            GameParameters.KeySounds[targetKey].UnloadAudioData();
             GameParameters.KeySounds[targetKey] = Resources.Load<AudioClip>(Path);
+            GameParameters.KeySounds[targetKey].LoadAudioData();
+
+            Resources.UnloadUnusedAssets();
         }
     }
 }
