@@ -37,7 +37,7 @@ namespace UiButtons.Title.module
 
             for (var i = 0; i < Dates.Length; i++)
             {
-                Dates[i] = new ModuleData(name[i], path[i]);
+                Dates[i] = new ModuleData(name[i], "synth_b/"+path[i]);
             }
         }
     }

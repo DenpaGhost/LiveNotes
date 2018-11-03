@@ -9,9 +9,16 @@ namespace game
             eventSystem,
             settingCard;
 
+        public AudioClip defaultClip;
+
         private void Start()
         {
             ViewOperator.SetParametersToView();
+            for (var i = 0; i < GameParameters.KeySounds.Length; i++)
+            {
+                GameParameters.KeySounds[i] = defaultClip;
+                GameParameters.KeySounds[i].LoadAudioData();
+            }
         }
 
         public void OnClick()

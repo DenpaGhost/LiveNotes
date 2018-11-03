@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace game
@@ -31,8 +32,10 @@ namespace game
 
         public override void onClick()
         {
-            buttonText.text = ModuleName + "\n" + Name;
             listView.close();
+            buttonText.text = ModuleName + "\n" + Name;
+            Debug.Log(Path);
+            GameParameters.KeySounds[targetKey] = Resources.Load<AudioClip>(Path);
         }
     }
 }
