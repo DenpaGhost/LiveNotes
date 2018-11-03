@@ -59,9 +59,6 @@ namespace game
             GameObject.Find("RefreshRateValue").GetComponent<Text>().text =
                 UtilFunctions.PutComma(GameParameters.RefreshRate);
 
-            GameObject.Find("NoteLengthValue").GetComponent<Text>().text =
-                "4";
-
             RefreshSpeedView();
         }
 
